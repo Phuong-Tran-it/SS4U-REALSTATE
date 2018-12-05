@@ -1,0 +1,582 @@
+/*Template Name: UrbanArchi
+File Name: responsive.css
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license*/
+
+
+
+/* Landscape phones and smaller */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .carousel-caption {
+        bottom: 2%;
+
+    }
+    .contact-form{
+        padding: 25px;
+        width: 50%;
+    }
+    .contact-form input{
+        height: 25px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    header .navbar-default .navbar-nav > li > a{
+        font-size: 16px;
+    }
+
+    .bx-wrapper .bx-viewport, .bx-wrapper .bx-prev{
+        left: 0;
+    }
+    .bx-wrapper .bx-next{
+        right: 0;
+    }
+
+    h1{
+        font-size: 23px;
+    }
+    h3{
+        font-size: 21px;
+    }
+    .blog_grid_right {
+        padding: 30px 15px 0;
+        min-height: 286px;
+    }
+    .blog_grid_right p {
+        line-height: 27px;
+        margin: 10px 0 25px;
+    }
+    .blog_grid_right ul li {
+        font-size: 13px;
+    }
+    .blog_grid_right ul li:last-child {
+        margin-left: 1em;
+    }
+
+}
+@media(min-width: 992px){
+
+}
+@media (min-width: 992px) and (max-width: 1023px) {
+    #searchbar{
+        width: 91%;
+    }
+    .head-wrapper{
+        height: 450px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 19px;
+    }
+    h3, .head-title{
+        font-size: 20px;
+    }
+    h4, .team_gd1 > h4{
+        font-size: 18px;
+    }
+    .desc, .footer-block h4{
+        font-size: 15px;
+    }
+    .footer-block ul li a, .info-block a{
+        font-size: 14px;
+    }
+    .property-info > h4, .team_gd1 > p{
+        font-size: 17px;
+    }
+    .advertise-block-one > p, .advertise-block-two > p, .about-block p{
+        font-size: 13px;
+    }
+    .copyright{
+        font-size: 14px;
+        margin-top: 35px;
+    }
+    .counter-full-image{
+        padding: 50px 0;
+    }
+    .finder-block-inner{
+        padding: 50px 0 20px 0;
+    }
+    .advantage-inner-block{
+        padding: 25px;
+    }
+    .counter{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .service-block, .counter-block, .gallery-block, .finder-block, .category-block, .recent-property-block, .advantage-block, .testimonial-block, .staff-block, section#contact, .blog-block, .gallery-block, .about-block{
+        padding-top: 30px;
+    }
+    .text-head, .bx-wrapper, .finder-block-inner .col-md-3 > input, .finder-block-inner .col-md-3 > select{
+        margin-bottom: 30px;
+    }
+    .text-head > h1{
+        letter-spacing: 3px;
+    }
+    .finder-block-inner .col-md-3 > input, .finder-block-inner select{
+        font-size: 15px;
+        padding: 8px 0;
+    }
+    header .navbar-default .navbar-nav > li > a {
+        font-size: 13px;
+        padding: 21px 7px !important;
+    }
+    a#searchtoggl{
+        margin-top: 0.8em;
+    }
+    .logo{
+        line-height: 52px;
+    }
+    .copyright{
+        margin-top: 15px
+    }
+
+    #searchbar{
+        width: 200px;
+        right: 25px;
+    }
+    .info-block, .advertise-block-one, .advertise-block-two{
+        padding: 25px;
+    }
+    .advertise-block-one > h4, .advertise-block-two > h4{
+        margin-bottom: 20px;
+    }
+    .info-block a{
+        margin-bottom: 15px;
+    }
+    footer{
+        margin-top: 25px;
+    }
+    .footer-social{
+        padding: 0;
+    }
+    .blog_grid_right {
+        width: 50%;
+        float: left;
+        padding: 50px 25px 0;
+        min-height: 331px;
+    }
+    .blog_grid_left {
+        width: 50%;
+        float: left;
+    }
+    .col-md-6.blog_grid {
+        width: 75%;
+        margin: 15px auto 0;
+    }
+    .blog_grid_right ul li:last-child {
+        margin-left: 1em;
+    }
+    .head-wrapper{
+        height: 400px;
+    }
+}
+@media (max-width: 1199px){
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .blog_grid{
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 451px;
+        margin: 15px auto 0;
+    }
+    .blog_grid_right, .blog_grid_left {
+        float: left;
+        width: 50%;
+    }
+    .blog_grid_right{
+        padding: 15px 15px 0;
+        min-height: 293px;
+    }
+    .blog_grid img {
+        max-height: 293px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    h1{
+        font-size: 21px;
+    }
+    h2,h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 17px;
+    }
+    .service-block, .counter-block, .gallery-block, .finder-block, .category-block, .recent-property-block, .advantage-block, .testimonial-block, .staff-block, section#contact, .blog-block, .gallery-block, .about-block{
+        padding-top: 25px;
+    }
+    .counter-full-image{
+        padding: 25px 0;
+    }
+    .bx-wrapper{
+        margin-bottom: 30px;
+    }
+    .finder-block-inner .col-md-3 > input, .finder-block-inner .col-md-3 > select, .product-layout {
+        margin-bottom: 15px;
+    }
+    .finder-block-inner .col-md-3 > input, .finder-block-inner select{
+        padding: 5px 0;
+        font-size: 13px;
+    }
+    .finder-block-inner{
+        padding: 30px 0 30px 0;
+    }
+    .counter{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .counter-block .col-xs-12{
+        margin-bottom: 25px;
+    }
+    .grid figure p{
+        font-size: 11px;
+    }
+    .bx-wrapper .bx-controls-direction a{
+        font-size: 17px;
+    }
+    figure.effect-marley h2::after{
+        height: 2px;
+    }
+    .text-head, .testblock{
+        margin-bottom: 25px;
+    }
+    .info-block{
+        padding: 25px 0;
+    }
+    .info-block a{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .advertise-block-one, .advertise-block-two{
+        padding: 20px 15px;
+    }
+    .advertise-block-one > h4, .advertise-block-two > h4{
+        margin-bottom: 10px;
+    }
+    .advertise-block-one > p, .advertise-block-two > p{
+        font-size: 13px;
+        margin: 0;
+    }
+    .text-head > h1{
+        letter-spacing: 1px;
+    }
+    .search {
+        left: 60%;
+        position: absolute;
+        top: -65px;
+    }
+    header .navbar-default .navbar-nav > li > a {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding: 8px;
+    }
+    .height-60{
+        height: 25px;
+    }
+    .navbar-default{
+        box-shadow: none;
+    }
+    .top-nav-collapse .navbar-nav li.active::before{
+        top: 6px;
+    }
+    .about-block .col-xs-12 {
+        margin-top: 25px;
+    }
+    .head-wrapper{
+        height: 250px;
+    }
+
+    .carousel-caption {
+        bottom: 15%;
+        left: 15%;
+    }
+    .copyright{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    #searchbar{
+        width: 91%;
+    }
+    .logo{
+        line-height: 1;
+    }
+    .property-info > h4{
+        font-size: 16px;
+    }
+    .property-info > h4:first-child{
+        min-height: 35px;
+    }
+    .product-thumb .quick-view{
+        font-size: 15px;
+    }
+    .advantage-inner-block{
+        padding: 15px;
+    }
+    .head-title{
+        font-size: 17px;
+        margin: 15px 0;
+    }
+    .desc, .testblock > p{
+        font-size: 13px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .testblock > p{
+        margin-top: 10px;
+    }
+    .team_gd1 > h4{
+        font-size: 16px;
+        margin: 15px 0 5px;
+    }
+    .team_info{
+        max-width: 268px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        margin-top: 20px;
+        padding: 15px 0;
+    }
+    .footer-block ul li a{
+        font-size: 13px;
+    }
+    .footer-block h4{
+        font-size: 15px;
+        margin: 20px 0;
+    }
+    .footer-social{
+        padding: 0;
+    }
+    .carousel{
+        margin-top: 50px;
+    }
+    .contact-form {
+        margin-left: 10%;
+        padding: 10px;
+        width: 40%;
+    }
+    .single-blog .contact-form {
+        margin-left: 0;
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .single-blog .blog-desc {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 23px;
+        margin: 25px 0;
+        text-align: left;
+    }
+    .single-blog .contact-form input{
+        height: 30px;
+    }
+    .single-blog .contact-form textArea{
+        font-size: 11px;
+        font-weight: 500;
+        border-width: 2px;
+    }
+    .carousel-caption {
+        bottom: 10%;
+        left: 15px;
+    }
+    .contact-form input {
+        border-width: medium medium 2px;
+        font-size: 11px;
+        font-weight: 500;
+        height: 30px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    .contact-form input + input {
+        margin-top: 15px;
+    }
+    .buttons > a{
+        margin-top: 10px;
+        font-size: 11px;
+        padding: 4px 5px;
+    }
+    #contact .form-control{
+        font-size: 14px;
+        height: 35px;
+    }
+    .btn-group-lg > .btn, .btn-lg {
+        font-size: 16px;
+    }
+    .about-block .inner i {
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+        width: 45px;
+    }
+    .section-heading {
+        font-weight: 600;
+    }
+}
+@media (max-width: 639px) {
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 19px;
+    }
+    .grid figure{
+        max-width: 565px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .category-block .effect-selena {
+        max-width: 365px;
+        margin-bottom: 10px;
+    }
+    .remove-right-padd{
+        padding-right: 15px;
+    }
+    .remove-left-padd{
+        padding-left: 15px;
+    }
+    .effect-marley {
+        margin-bottom: 10px;
+    }
+    .grid figure p{
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .head-title{
+        font-size: 16px;
+
+    }
+    .btn-group-lg > .btn, .btn-lg {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+}
+@media (min-width: 640px) and (max-width: 767px) {
+    .advertise-block .col-xs-12, .service-block .col-xs-12, .category-block .col-xs-12, .advantage-block .col-xs-12, .testimonial-block .col-xs-12, .about-block .col-xs-12{
+        width: 50%;
+    }
+    .about-block .col-xs-12 + .col-xs-12 {
+        // margin-top: 0;
+    }
+    .about-block .col-xs-12{
+        margin-top: 25px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .info-block > .col-xs-12, .counter-block .col-xs-12, .finder-block-inner .col-xs-12, .staff-block .col-xs-12, .footer-block-main .col-xs-12{
+        width: 50%;
+    }
+    .location-info {
+        min-height: 195px;
+    }
+    .info-block a{
+        min-height: 45px;
+    }
+    .recent-property-block .col-xs-12 {
+        width: 50%;
+    }
+    .single-blog .blog-list-top{
+        width: 50%;
+        float: left;
+    }
+
+
+}
+@media (max-width: 550px) {
+    h1{
+        font-size: 19px;
+    }
+    h2{
+        font-size: 19px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .advertise-block-two{
+        margin-top: 15px;
+    }
+    .property-info > h4{
+        font-size: 15px;
+    }
+    .contact-form {
+        padding: 10px;
+        width: 60%;
+    }
+    .carousel-caption {
+        bottom: 0;
+        left: 15px;
+    }
+    .contact-form input {
+        border-width: medium medium 2px;
+        font-size: 12px;
+        font-weight: 500;
+        height: 25px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    .contact-form input + input {
+        margin-top: 10px;
+    }
+    .buttons > a{
+        margin-top: 10px;
+        font-size: 11px;
+        padding: 4px 5px;
+    }
+    #contact p.dark{
+        font-size: 13px;
+    }
+
+
+}
+@media (max-width: 480px) {
+    .blog_grid img {
+        width: 100%;
+    }
+
+}
+@media (max-width: 400px) {
+    .contact-form {
+        padding: 10px;
+        width: 60%;
+    }
+    .carousel-caption {
+        bottom: 0;
+        left: 15px;
+    }
+    .contact-form input {
+        border-width: medium medium 2px;
+        font-size: 11px;
+        font-weight: 500;
+        height: 18px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    .contact-form input + input {
+        margin-top: 10px;
+    }
+    .buttons > a{
+        margin-top: 10px;
+        font-size: 11px;
+        padding: 4px 5px;
+    }
+
+}
+@media (min-width: 300px) and (max-width: 360px) {
+
+}
+
+
+
