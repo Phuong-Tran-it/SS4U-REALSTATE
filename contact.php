@@ -1,8 +1,4 @@
-<!--Template Name: UrbanArchi
-File Name: contact.html
-Author Name: ThemeVault
-Author URI: http://www.themevault.net/
-License URI: http://www.themevault.net/license/-->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +38,7 @@ License URI: http://www.themevault.net/license/-->
                                     <span class="icon-bar"></span>
                                 </button>
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/logoCTY.png" alt="logo"></a>
+                                    <a href="index.php"><img src="images/logoCTY.png" alt="logo"></a>
                                 </div>
                             </div>
                         </div>
@@ -53,11 +49,11 @@ License URI: http://www.themevault.net/license/-->
                                     <li class="hidden active">
                                         <a href="#page-top" class="page-scroll"></a>
                                     </li>
-                                    <li><a href="home.html" class="page-scroll">Trang Chủ</a></li>
-                                    <li><a href="about.html" class="page-scroll">Giới Thiệu</a></li>
-                                    <li><a href="agents.html" class="page-scroll">Đại Diện</a></li>
-                                    <li><a href="gallery.html" class="page-scroll">Dự Án</a></li>
-                                    <li> <a href="blog.html" class="page-scroll">Blog</a></li>
+                                    <li><a href="home.php" class="page-scroll">Trang Chủ</a></li>
+                                    <li><a href="about.php" class="page-scroll">Giới Thiệu</a></li>
+                                    <li><a href="agents.php" class="page-scroll">Đại Diện</a></li>
+                                    <li><a href="gallery.php" class="page-scroll">Dự Án</a></li>
+                                    <li> <a href="blog.php" class="page-scroll">Blog</a></li>
                                     <li class="active"> <a class="page-scroll">Liên Hệ</a></li>
                                 </ul>
                             </div>
@@ -78,33 +74,9 @@ License URI: http://www.themevault.net/license/-->
             </nav>
         </header>
         <!--end-->
-        <div class="head-wrapper"></div>
-        <div class="clearfix"></div>
-
-        <section class="location-block">
-                <div class="container">
-                    <div class="row info-block">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 scrollReveal sr-bottom sr-delay-1">
-                            <a><i class="fa fa-map-marker"></i>
-                                <span> 15A Hoang Hoa Tham Street,<br>Binh Thanh district HCM City.</span></a>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 scrollReveal sr-bottom sr-delay-2">
-                            <a class="add-space" href="mail:demo@info.com"><i class="fa fa-envelope"></i>
-                                <span>demo@info.com</span></a>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 scrollReveal sr-bottom sr-delay-3">
-                            <a class="add-space" href="tel:XXXXXXXX"><i class="fa fa-phone"></i>
-                                <span>XXXXXXXX</span></a>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 scrollReveal sr-bottom sr-delay-4">
-                            <a class="add-space" href="www.ss4u.vn"><i class="fa fa fa-globe"></i>
-                                <span>www.ss4u.com</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>  
-            </section>
-
+        <!--Thông Tin Liên Lạc-->
+        <?php require_once __DIR__. "/layouts/lienlac.php";?>
+        <!--end-->
         <section class="text-center" id="contact">
             <div class="container">
                 <div class="row no-margin  ">
@@ -174,12 +146,12 @@ License URI: http://www.themevault.net/license/-->
                     <div class="col-sm-3 col-xs-12">
                         <div class="footer-block"><h4>quick links</h4>
                             <ul class="list-unstyled">
-                                <li><a href="home.html">Trang Chủ</a></li>
-                                <li><a href="about.html">Giới Thiệu</a></li>
-                                <li><a href="agents.html">Đại Diện</a></li>
-                                <li><a href="gallery.html">Dự Án</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li class="active"><a href="contact.html">Liên Hệ</a></li>
+                                <li><a href="home.php">Trang Chủ</a></li>
+                                <li><a href="about.php">Giới Thiệu</a></li>
+                                <li><a href="agents.php">Đại Diện</a></li>
+                                <li><a href="gallery.php">Dự Án</a></li>
+                                <li><a href="blog.php">Blog</a></li>
+                                <li class="active"><a href="contact.php">Liên Hệ</a></li>
                             </ul>
 
                         </div>
