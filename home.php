@@ -155,7 +155,7 @@
             --->
         <!--end--->
         <!--cây tìm kiếm-->
-        <?php require_once __DIR__. "/function/SearchTree.php";?>
+        <?php require_once __DIR__. "/admin/function/SearchTree.php";?>
         <!--end-->
         <!--service block-->
         <section class="service-block">
