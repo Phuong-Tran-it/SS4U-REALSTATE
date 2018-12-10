@@ -1,3 +1,4 @@
+<?php require_once __DIR__. "/../autoload/autoload.php";?>
 <footer>
             <div class="container">
                 <div class="row footer-block-main">
@@ -5,12 +6,12 @@
                         <div class="footer-block">
                             <h4>Đường Dẫn</h4>
                             <ul class="list-unstyled">
-                                <li><a href="/SS4UREALSTATE/home.php"> Chủ</a></li>
-                                <li><a href="/SS4UREALSTATE/about.php">Giới Thiệu</a></li>
-                                <li><a href="/SS4UREALSTATE/agents.php">Người Quản Lý</a></li>
-                                <li><a href="/SS4UREALSTATE/gallery.php">Dự Án</a></li>
-                                <li><a href="/SS4UREALSTATE/blog.php">Blog</a></li>
-                                <li><a href="/SS4UREALSTATE/contact.php">Liên Hệ</a></li>
+                                <li><a href="<?php echo base_url() ?>home.php"> Chủ</a></li>
+                                <li><a href="<?php echo base_url() ?>about.php">Giới Thiệu</a></li>
+                                <li><a href="<?php echo base_url() ?>agents.php">Người Quản Lý</a></li>
+                                <li><a href="<?php echo base_url() ?>gallery.php">Dự Án</a></li>
+                                <li><a href="<?php echo base_url() ?>blog.php">Blog</a></li>
+                                <li><a href="<?php echo base_url() ?>contact.php">Liên Hệ</a></li>
                             </ul>
                         </div>
                     </div>

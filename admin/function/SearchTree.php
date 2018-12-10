@@ -1,3 +1,7 @@
+<?php 
+   require_once __DIR__. "/../autoload/autoload.php";
+   $category =$db->fetchAll("category");
+   ?>
 <section class="finder-block">
             <div class="container">
                 <div class="text-head text-center">
@@ -84,6 +88,9 @@
                             <div class="col-md-3 col-sm-6 col-xs-12 scrollReveal sr-scaleDown sr-delay-3">
                                 <select>
                                     <option>Loại Bất Động Sản</option>
+                                    <?php $stt=1; foreach ($category as $item): ?>
+                                    <option><?php echo $item['name'] ?></option>
+                                    <?php $stt++; endforeach ?>
                                 </select>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12 scrollReveal sr-scaleDown sr-delay-4">

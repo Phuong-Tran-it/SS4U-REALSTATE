@@ -4,7 +4,11 @@
 	require_once __DIR__. "/../../autoload/autoload.php";
 	if ($_SERVER["REQUEST_METHOD"]=="POST")
 	{
-		$data=["name" => postInput('name')];
+		$data=
+      [
+         "name" => postInput('name'),
+         "slug" => to_slug(postInput("name"))
+      ];
 		$error = [];
 		if(postInput('name')=='')
 		{
@@ -14,7 +18,15 @@
 		if(empty($error))
 		{
 			$id_insert = $db->insert("category",$data);
-			print_r($id_insert);
+			if($id_insert>0)
+         {
+            $_SESSION['success']="Thêm Mới thành công";
+            redirectAdmin("index.php");
+         }
+         else
+         {
+            $_SESSION['error']="Thêm Mới thất bại";
+         }
 		}
 	}
 ?>
@@ -26,7 +38,7 @@
       <div >
          <ol class="breadcrumb">
             <li>
-               <i class="fa fa-dashboard"></i><a href="/SS4UREALSTATE/home.php">Trang Chủ</a>
+               <i class="fa fa-dashboard"></i><a href="<?php echo base_url() ?>home.php">Trang Chủ</a>
             </li>
             <li>
                <i></i><a href="index.php">Danh Mục Sản Phẩm</a>

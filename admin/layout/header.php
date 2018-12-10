@@ -1,3 +1,4 @@
+<?php require_once __DIR__. "/../autoload/autoload.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,22 +8,22 @@
         <link rel="icon" href="/SS4UREALSTATE/public/admin/images/REALSTATE.png"/>
         <title>Trang Chủ</title>
         <!-- Bootstrap core CSS -->
-        <link href="/SS4UREALSTATE/public/admin/css/scrolling-nav.css" rel="stylesheet" media="all">
-        <link href="/SS4UREALSTATE/public/admin/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/SS4UREALSTATE/public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="/SS4UREALSTATE/public/admin/css/bxslider.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url() ?>public/admin/css/scrolling-nav.css" rel="stylesheet" media="all">
+        <link href="<?php echo base_url() ?>public/admin/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo base_url() ?>public/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url() ?>public/admin/css/bxslider.css" rel="stylesheet" type="text/css" />
         <!-- Custom styles for this template -->
-        <link href="/SS4UREALSTATE/public/admin/css/style.css" rel="stylesheet">
-        <link href="/SS4UREALSTATEpublic/admin/css/responsive.css" rel="stylesheet">
-        <script src="/SS4UREALSTATEpublic/admin/js/jquery.min.js" type="text/javascript"></script>
-        <script src="/SS4UREALSTATEpublic/admin/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="/SS4UREALSTATEpublic/admin/js/scrolling-nav.js" type="text/javascript"></script>
-        <script src="/SS4UREALSTATEpublic/admin/js/scrollreveal.min.js" type="text/javascript"></script>
-        <script src="/SS4UREALSTATEpublic/admin/js/counterup.min.js" type="text/javascript"></script>
-        <script src="/SS4UREALSTATEpublic/admin/js/waypoints.min.js" type="text/javascript"></script>
-        <script src="/SS4UREALSTATEpublic/admin/js/bxslider.js" type="text/javascript"></script>
-        <script type="text/javascript" src="/SS4UREALSTATEpublic/admin/js/instafeed.min.js"></script>
-        <script src="/SS4UREALSTATEpublic/admin/js/custom.js" type="text/javascript"></script>
+        <link href="<?php echo base_url() ?>public/admin/css/style.css" rel="stylesheet">
+        <link href="<?php echo base_url() ?>public/admin/css/responsive.css" rel="stylesheet">
+        <script src="<?php echo base_url() ?>public/admin/js/jquery.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>public/admin/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>public/admin/js/scrolling-nav.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>public/admin/js/scrollreveal.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>public/admin/js/counterup.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>public/admin/js/waypoints.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>public/admin/js/bxslider.js" type="text/javascript"></script>
+        <script type="text/javascript" src="<?php echo base_url() ?>public/admin/js/instafeed.min.js"></script>
+        <script src="<?php echo base_url() ?>/admin/js/custom.js" type="text/javascript"></script>
     </head>
     <body>
         <!--header--->
