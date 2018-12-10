@@ -39,7 +39,7 @@
                                 <span class="icon-bar"></span>
                                 </button>
                                 <div class="logo">
-                                    <a href="home.php"><img src="/SS4UREALSTATE/public/admin/images/logoCTY.png" alt="logo"></a>
+                                    <a href="/SS4UREALSTATE/home.php"><img src="/SS4UREALSTATE/public/admin/images/logoCTY.png" alt="logo"></a>
                                 </div>
                             </div>
                         </div>
@@ -49,12 +49,12 @@
                                     <li class="hidden active">
                                         <a href="#page-top" class="page-scroll"></a>
                                     </li>
-                                    <li class="active"><a href="home.php" class="page-scroll">Trang Chủ</a></li>
-                                    <li><a href="about.php" class="page-scroll">Giới Thiệu</a></li>
-                                    <li><a href="agents.php" class="page-scroll">Đại Diện</a></li>
-                                    <li><a href="gallery.php" class="page-scroll">Dự Án</a></li>
-                                    <li> <a href="blog.php" class="page-scroll">Blog</a></li>
-                                    <li> <a href="contact.php" class="page-scroll">Liên Hệ</a></li>
+                                    <li ><a href="/SS4UREALSTATE/home.php" class="page-scroll">Trang Chủ</a></li>
+                                    <li><a href="/SS4UREALSTATE/about.php" class="page-scroll">Giới Thiệu</a></li>
+                                    <li><a href="/SS4UREALSTATE/agents.php" class="page-scroll">Đại Diện</a></li>
+                                    <li><a href="/SS4UREALSTATE/gallery.php" class="page-scroll">Dự Án</a></li>
+                                    <li> <a href="/SS4UREALSTATE/blog.php" class="page-scroll">Blog</a></li>
+                                    <li> <a href="/SS4UREALSTATE/contact.php" class="page-scroll">Liên Hệ</a></li>
                                 </ul>
                             </div>
                         </div>

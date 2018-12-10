@@ -1,1 +1,6 @@
-<?php require_once __DIR__. "/admin/function/SearchTree.php";?>
+
+<?php 
+    require_once __DIR__. "/../../libraries/Database.php";
+    require_once __DIR__. "/../../libraries/Function.php";
+    $db = new Database;
+?>
