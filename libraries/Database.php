@@ -13,7 +13,13 @@
            param array $data
            return integer
        */
-
+           //xóa
+        public function delete($table, $id)
+        {
+          $sql ="DELETE FROM {$table} WHERE id = $id ";
+          mysqli_query($this->link,$sql) or die ("Lỗi Truy Vấn delete --" .mysqli_error($this->link));
+          return mysqli_affected_rows($this->link);
+        }
        public function insert($table, array $data)
        {
            $sql = "INSERT INTO {$table}";
@@ -59,8 +65,8 @@
        public function update($table, array $data, array $conditions)
        {
             $sql ="UPDATE {$table}";
-            $set="SET";
-            $where="WHERE";
+            $set=" SET ";
+            $where=" WHERE ";
             foreach($data as $field=>$value){
                 if(is_string($value)){
                     $set .= $field .'='.'\''.mysqli_real_escape_string($this->link,xss_clean($value)
@@ -69,7 +75,20 @@
                     $set .= $field .'='. mysqli_real_escape_string($this->link,xss_clean($value)).',';
                 }
             }
-       }
-
+            $set = substr($set,0,-1);
+   
+            foreach ($conditions as $field => $value) {
+                if(is_string($value)){
+                    $where .= $field .'='.'\''. mysqli_real_escape_string($this->link,xss_clean($value)).'\' AND ';
+                }else{
+                    $where .=$field .'='. mysqli_real_escape_string($this->link,xss_clean($value)).' AND ';
+                }
+            }
+            $where = substr($where,0,-5);
+            $sql.= $set . $where;
+            mysqli_query($this->link, $sql)or die("Lỗi truy vấn update--".mysqli_error($this->link));
+            return mysqli_affected_rows($this->link);
+        }
+   
     }
    ?>

@@ -3,6 +3,7 @@
    require_once __DIR__. "/../../layout/header.php";
    $category =$db->fetchAll("category");
    ?>
+           <title>Danh Mục Sản Phẩm</title>
 <!---end--->
 <!--gallery block-->
 <br>
@@ -20,7 +21,7 @@
          </ol>
       </div>
       <div class="text-head text-center">
-         <h1>Danh Sách Bất Động Sản</h1>
+         <h1>Danh Mục Bất Động Sản</h1>
       </div>
       <!--Them-->
       <div class="clearfix"></div>

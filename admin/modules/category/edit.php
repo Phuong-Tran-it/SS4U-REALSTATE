@@ -3,6 +3,7 @@
 <?php 
 	require_once __DIR__. "/../../autoload/autoload.php";
 	$id = intval(getInput('id'));
+	
 	$EditCategory = $db->fetchID("category",$id);
 	if(empty($EditCategory))
 	{
@@ -26,15 +27,15 @@
 		{
 			$id_update = $db->update("category",$data,array("id"=>$id));
 			if($id_update>0)
-         {
-            $_SESSION['success']="Cập nhật thành công";
-            redirectAdmin("index.php");
-         }
+		     {
+		        $_SESSION['success']="Cập nhật thành công";
+		        redirectAdmin("index.php");
+		     }
          else
-         {
-            $_SESSION['error']="Dữ liệu không thay đổi";
-            redirectAdmin("index.php"); 
-         }
+	         {
+	            $_SESSION['error']="Dữ liệu không thay đổi";
+	            redirectAdmin("index.php"); 
+	         }
 		}
 	}
 ?>

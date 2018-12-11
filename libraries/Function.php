@@ -1,19 +1,23 @@
 <?php
-	function _debug($data)
-	{
-		echo'<pre style="background:#000; color:#fff;width:100%;overflow:auto">';
-		echo'<div>Your IP:'.$_SERVER['REMOTE_ADDR'].'</div>';
-		$debug_backtrace = debug_backtrace();
-		echo '<div>File:'.$debug['file'].'</div>';
-		echo '<div>Line:'.$debug['line'].'</div>';
-		if(is_array($data)||is_object($data)){
-			print_r($data);
-		}
-		else{
-			var_dump($data);
-		}
-		echo'</pre>';
-	}
+	function _debug($data) {
+
+        echo '<pre style="background: #000; color: #fff; width: 100%; overflow: auto">';
+        echo '<div>Your IP: ' . $_SERVER['REMOTE_ADDR'] . '</div>';
+
+        $debug_backtrace = debug_backtrace();
+        $debug = array_shift($debug_backtrace);
+
+        echo '<div>File: ' . $debug['file'] . '</div>';
+        echo '<div>Line: ' . $debug['line'] . '</div>';
+
+        if(is_array($data) || is_object($data)) {
+            print_r($data);
+        }
+        else {
+            var_dump($data);
+        }
+        echo '</pre>';
+    }
 	function postInput($string)
 	{
 		return isset($_POST[$string]) ? $_POST[$string]:'';
@@ -33,6 +37,7 @@
 			header("location:".base_url()."admin/modules/category");exit();
 		}
 	}
+	//kiểm tra xem nếu hàm đó  ko tồn tịa thì mới tạo hàm đó !﻿
 	if( ! function_exists('xss_clean') ) {
         function xss_clean($data)
         {
