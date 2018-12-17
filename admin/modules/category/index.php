@@ -13,31 +13,20 @@
       <div >
          <ol class="breadcrumb">
             <li>
-               <i class="fa fa-dashboard"></i><a href="<?php echo base_url() ?>home.php">Trang Chủ</a>
+               <i class="fa fa-home"></i><a href="<?php echo base_url() ?>home.php">Trang Chủ</a>
             </li>
             <li class="active">
-               <i class="fa fa-file"></i>Danh Mục Sản Phẩm
+               <i class="fa fa-file"></i>Danh Mục Dự Án
             </li>
          </ol>
       </div>
       <div class="text-head text-center">
-         <h1>Danh Mục Bất Động Sản</h1>
+         <h1>Danh Sách Dự Án</h1>
       </div>
       <!--Them-->
       <div class="clearfix"></div>
-      <?php if(isset($_SESSION['success'])):?>
-      <div class="alert alert-primary">
-         <?php echo $_SESSION['success']; unset($_SESSION['success'])?>
-      </div>
-      <?php endif;?>
-      <!--end-->
-      <!--sua-->
-      <div class="clearfix"></div>
-      <?php if(isset($_SESSION['error'])):?>
-      <div class="alert alert-danger">
-         <?php echo $_SESSION['error']; unset($_SESSION['error'])?>
-      </div>
-      <?php endif;?>
+      <!--thông báo-->
+      <?php require_once __DIR__. "/../../../partials/notification.php";?>
       <!--end-->
       <div class="pull-right">
          <a href="add.php" class="btn btn-info">Thêm Mới</a>

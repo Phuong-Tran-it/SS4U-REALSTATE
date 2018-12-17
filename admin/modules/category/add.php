@@ -2,6 +2,7 @@
 
 <?php 
 	require_once __DIR__. "/../../autoload/autoload.php";
+
 	if ($_SERVER["REQUEST_METHOD"]=="POST")
 	{
 		$data=
@@ -17,15 +18,24 @@
 		//error trống là không phải lỗi
 		if(empty($error))
 		{
-			$id_insert = $db->insert("category",$data);
-			if($id_insert>0)
+         $isset = $db ->fetchOne("category","name = '".$data['name']."'");
+         if(count($isset)>0)
          {
-            $_SESSION['success']="Thêm Mới thành công";
-            redirectAdmin("index.php");
+            $_SESSION['error']="Tên danh mục đã tồn tại";
          }
-         else
-         {
-            $_SESSION['error']="Thêm Mới thất bại";
+         else {
+
+
+   			$id_insert = $db->insert("category",$data);
+   			if($id_insert>0)
+            {
+               $_SESSION['success']="Thêm Mới thành công";
+               redirectAdmin("index.php");
+            }
+            else
+            {
+               $_SESSION['error']="Thêm Mới thất bại";
+            }
          }
 		}
 	}
@@ -38,10 +48,10 @@
       <div >
          <ol class="breadcrumb">
             <li>
-               <i class="fa fa-dashboard"></i><a href="<?php echo base_url() ?>home.php">Trang Chủ</a>
+               <i class="fa fa-home"></i><a href="<?php echo base_url() ?>home.php">Trang Chủ</a>
             </li>
             <li>
-               <i></i><a href="index.php">Danh Mục Sản Phẩm</a>
+               <i></i><a href="index.php">Danh Sách Dự Án</a>
             </li>
             <li class="active">
                <i class="fa fa-file"></i>Thêm Mới
@@ -49,8 +59,14 @@
          </ol>
       </div>
       <div class="text-head text-center">
-         <h1>Thêm Mới Danh Mục</h1>
+         <h1>Thêm Mới Dự Án</h1>
       </div>
+      <div class="clearfit"></div>
+      <?php if(isset($_SESSION['error'])):?>
+      <div class="alert alert-danger">
+         <?php echo $_SESSION['error']; unset($_SESSION['error'])?>
+      </div>
+      <?php endif;?>
       <div class="row">
          <div class="col-lg-12">
             <form class="form-horizontal" action="" method="POST">

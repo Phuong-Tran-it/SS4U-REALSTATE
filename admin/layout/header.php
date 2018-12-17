@@ -58,7 +58,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- /navbar-collapse -->
+                        <!-- /navbar-collapse 
                         <div class="col-md-2 col-sm-1">
                             <a class="search" id="searchtoggl"><i class="fa fa-search"></i></a>
                             <div id="searchbar" class="clearfix">
@@ -68,6 +68,7 @@
                                 </form>
                             </div>
                         </div>
+                        -->
                     </div>
                 </div>
                 <!-- /.container -->

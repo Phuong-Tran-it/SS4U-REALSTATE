@@ -18,6 +18,18 @@
         }
         echo '</pre>';
     }
+    function uploads()
+    {
+        return base_url() . "public/uploads/";
+    }
+    
+     if ( ! function_exists('redirectStyle'))
+    {
+        function redirectStyle($url = "")
+        {
+            header("location: ".base_url()."{$url}");exit();
+        }
+    }
 	function postInput($string)
 	{
 		return isset($_POST[$string]) ? $_POST[$string]:'';
@@ -37,6 +49,13 @@
 			header("location:".base_url()."admin/modules/category");exit();
 		}
 	}
+    if (!function_exists('redirectAdmin1'))
+    {
+        function redirectAdmin1($url="")
+        {
+            header("location:".base_url()."admin/modules/product");exit();
+        }
+    }
 	//kiểm tra xem nếu hàm đó  ko tồn tịa thì mới tạo hàm đó !﻿
 	if( ! function_exists('xss_clean') ) {
         function xss_clean($data)

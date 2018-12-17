@@ -1,5 +1,7 @@
 <?php 
-   require_once __DIR__. "/../autoload/autoload.php";
+   require_once __DIR__. "/../../libraries/Database.php";
+    require_once __DIR__. "/../../libraries/Function.php";
+    $db = new Database;
    $category =$db->fetchAll("category");
    ?>
 <section class="finder-block">

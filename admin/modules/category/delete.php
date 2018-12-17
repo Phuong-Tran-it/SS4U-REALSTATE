@@ -11,7 +11,10 @@
 		redirectAdmin("category");
 	}
    /*Kiểm tra danh mục đã có sản phẩm chưa*/
-   $num = $db->delete("category",$id);
+   $is_product = $db->fetchOne("product","category_id= $id ");
+   if($is_product == NULL)
+   {
+      $num = $db->delete("category",$id);
    if($num>0)
    {
       $_SESSION['success']="Xóa thành công";
@@ -22,4 +25,12 @@
       $_SESSION['error']="Xóa thất bại";
               redirectAdmin("index.php");
    }
+   }
+   else
+   {
+      $_SESSION['error'] = "Dự án có tin đăng ! bạn không thể xóa";
+      redirectAdmin("index.php");
+   }
+   /**/
+   
 ?>

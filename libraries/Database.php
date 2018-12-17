@@ -55,6 +55,15 @@
            }
            return $data;
        }
+       //
+       public function fetchOne($table, $query)
+       {
+            $sql = "SELECT * FROM {$table} WHERE ";
+            $sql .= $query;
+            $sql .= "LIMIT 1";
+            $result = mysqli_query($this->link,$sql) or die ("Lỗi truy vấn fetchOne" .mysqli_error($this->link));
+            return mysqli_fetch_assoc($result);
+       }
        //select tất cả các sản phẩm có id bằng id truyền vào
        public function fetchID($table,$id)
        {
@@ -89,6 +98,36 @@
             mysqli_query($this->link, $sql)or die("Lỗi truy vấn update--".mysqli_error($this->link));
             return mysqli_affected_rows($this->link);
         }
+        /*
+        //phân trang
+        public function fetchJone($table,$sql,$page =0,$row,$pagi = false )
+        {
+          $data = [];
+          if ($pagi == true) 
+          {
+              $total = $this->countTable($table);
+              $sotrang = ceil($total / $row);
+              $start = ($page - 1) * $row ;
+              $sql .= " LIMIT $start,$row";
+              $data= [ "page" => $sotrang];
+
+              $result = mysqli_query($this->link,$sql) or die ("Lỗi truy vấn fetchJone".
+                mysqli_error($this->link));
+   
+          }
+          else
+          {
+            $result = mysqli_query($this->link,$sql) or die ("lỗi truy vấn fetchJone=--".mysqli_error($this->link));
+          }
+          if ( $result)
+          {
+            while ($num = mysqli_fetch_assoc($result)) {
+                $data[]=$num;
+            }
+          }
+          return $data; 
+        }
+        */
    
     }
    ?>

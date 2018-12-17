@@ -1,49 +1,23 @@
 
+
 <?php 
 	require_once __DIR__. "/../../autoload/autoload.php";
-	$id = intval(getInput('id'));
-	
-	$EditCategory = $db->fetchID("category",$id);
-	if(empty($EditCategory))
-	{
-		$_SESSION['error']= "Dữ Liệu Không Tồng Tại";
-		redirectAdmin("category");
-	}
+      $category = $db->fetchAll("category");
 	if ($_SERVER["REQUEST_METHOD"]=="POST")
 	{
 		$data=
       [
-         "name" => postInput('name'),
-         "slug" => to_slug(postInput("name"))
+         "category_id" => postInput("category_id")
       ];
 		$error = [];
-		if(postInput('name')=='')
+		if(postInput('category_id')=='')
 		{
-			$error['name']="Mời bạn nhập đầy đủ tên danh mục";
+			$error['category_id']="Mời bạn nhập đầy đủ tên danh mục";
 		}
 		//error trống là không phải lỗi
 		if(empty($error))
 		{
-         $isset = $db ->fetchOne("category","name = '".$data['name']."'");
-			$id_update = $db->update("category",$data,array("id"=>$id));
-         if(count($isset)>0)
-         {
-            $_SESSION['error']="Tên danh mục đã tồn tại";
-         }
-         else{
-
-
-			if($id_update>0)
-		     {
-		        $_SESSION['success']="Cập nhật thành công";
-		        redirectAdmin("index.php");
-		     }
-         else
-	         {
-	            $_SESSION['error']="Dữ liệu không thay đổi";
-	            redirectAdmin("index.php"); 
-	         }
-            }
+         
 		}
 	}
 ?>
@@ -61,12 +35,12 @@
                <i></i><a href="index.php">Danh Sách Dự Án</a>
             </li>
             <li class="active">
-               <i class="fa fa-file"></i>Chỉnh Sửa
+               <i class="fa fa-file"></i>Thêm Mới
             </li>
          </ol>
       </div>
       <div class="text-head text-center">
-         <h1>Chỉnh Sửa Dự Án</h1>
+         <h1>Thêm Mới Dự Án</h1>
       </div>
       <div class="clearfit"></div>
       <?php if(isset($_SESSION['error'])):?>
@@ -80,10 +54,17 @@
                <div class="form-group">
                   <label for="inputEmail3" class="col-sm2 control-label">Tên Danh Mục</label>
                   <div class="[pull-right]">
-                     <input type="text" class="form-control" id="inputEmail3" placeholder="Tên Danh Mục" name="name"value="<?php echo $EditCategory['name']  ?>">
-                     <?php if(isset($error['name'])):?>
-                        <p class="text-danger"><?php echo $error['name']; ?></p>
-                     <?php endif ?>
+                     <select class="form-control form-control-lg" id="inputEmail3" name="category_id">
+                        <option value="">Chung Cư Thuộc Dự án</option>
+                        <?php foreach ($category as $item): ?>
+                           <option value="<?php echo $item['id'] ?>"><?php echo $item['name'] ?>
+                           </option>
+                        <?php endforeach?>
+                     </select>
+                        <?php if (isset($error['category_id'])):?>
+                           <p class="text-danger"> <?php echo $error['category_id'] ?></p>
+                        <?php endif?>
+                     
                   </div>
                </div>
                <div class="form-group">
