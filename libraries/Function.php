@@ -56,6 +56,13 @@
             header("location:".base_url()."admin/modules/product");exit();
         }
     }
+    if (!function_exists('redirectAdmin2'))
+    {
+        function redirectAdmin2($url="")
+        {
+            header("location:".base_url()."admin/modules/admin");exit();
+        }
+    }
 	//kiểm tra xem nếu hàm đó  ko tồn tịa thì mới tạo hàm đó !﻿
 	if( ! function_exists('xss_clean') ) {
         function xss_clean($data)

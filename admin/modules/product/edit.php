@@ -32,6 +32,7 @@
            "price" => postInput('price'), //Giá
            "SL_PHONG" => postInput('SL_PHONG'), //SL phòng
            "SL_WC" => postInput('SL_WC'), //WC
+           "number" => postInput('number'), //Số lượng
             "category_id" => postInput('category_id'),
               "OPENING_DAY" => postInput('OPENING_DAY'),
               "FINAL_DAY" => postInput('FINAL_DAY'),
@@ -52,6 +53,10 @@
       if(postInput('HOUSE_DETAIL_CODE')=='')
       {
          $error['HOUSE_DETAIL_CODE']="Thiếu";
+      }
+      if(postInput('number')=='')
+      {
+         $error['number']="Thiếu";
       }
       if(postInput('BUILDING_ID')=='')
       {
@@ -318,16 +323,23 @@
                   </div>
                </div>
                <div class="form-row">
-                  <div class="form-group col-md-6" >
+                  <div class="form-group col-md-4" >
                      <label for="exampleFormControlTextarea1">Nhập Giá</label>
                      <input type="number" class="form-control" id="inputAddress" placeholder="000.000.000" name="price" value="<?php echo $Editproduct['price'] ?>">
                      <?php if (isset($error['price'])):?>
                      <p class="text-danger"> <?php echo $error['price'] ?></p>
                      <?php endif?>
                   </div>
-                  <div class="form-group col-md-6">
+                  <div class="form-group col-md-4">
                      <label for="exampleFormControlTextarea1">Giảm Giá</label>
                      <input type="number" class="form-control" id="inputAddress" placeholder="%" name="sale" value="0 " value="<?php echo $Editproduct['sale'] ?>">
+                  </div>
+                  <div class="form-group col-md-4" >
+                     <label for="exampleFormControlTextarea1">Nhập số lượng</label>
+                     <input type="number" class="form-control" id="inputAddress" placeholder="" name="number" value="<?php echo $Editproduct['number'] ?>">
+                     <?php if (isset($error['number'])):?>
+                     <p class="text-danger"> <?php echo $error['number'] ?></p>
+                     <?php endif?>
                   </div>
                </div>
                <div class="form-row-primary">

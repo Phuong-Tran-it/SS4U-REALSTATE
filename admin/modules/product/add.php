@@ -153,7 +153,7 @@
                <div class="panel-body" >
                   <div class="form-group col-md-3">
                      <label for="inputEmail4">Mã Block</label>
-                     <input type="text" class="form-control" id="inputEmail4" placeholder="" name="PORTION_ID"z>
+                     <input type="text" class="form-control" id="inputEmail4" placeholder="" name="PORTION_ID">
                      <?php if (isset($error['PORTION_ID'])):?>
                      <p class="text-danger"> <?php echo $error['PORTION_ID'] ?></p>
                      <?php endif?>
