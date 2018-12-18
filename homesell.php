@@ -267,9 +267,9 @@
                   <h4>social media</h4>
                   <div class="footer-social">
                      <ul class="list-unstyled">
-                        <li><a><i class="fa fa-facebook"></i></a></li>
-                        <li><a><i class="fa fa-twitter"></i></a></li>
-                        <li><a><i class="fa fa-linkedin"></i></a></li>
+                        <li><a><i class="fa fa-search"></i></a></li>
+                        <li><a><i class="fa fa-heart"></i></a></li>
+                        <li><a><i class="fa fa-shopping-cart"></i></a></li>
                         <li><a><i class="fa fa-instagram"></i></a></li>
                         <li><a><i class="fa fa-google-plus"></i></a></li>
                         <li><a><i class="fa fa-behance"></i></a></li>

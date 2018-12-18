@@ -1482,4 +1482,93 @@ table {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+  /*carousel*/
+  /*carousel*/
+#myCarousel1 .carousel-caption {
+    bottom: auto;
+    color: #fff;
+    left: 50%;
+    position: absolute;
+    right: auto;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 0;
+}
+#myCarousel1 .carousel-caption h1 {
+    color: #fff;
+    font-family: "exotc350_dmbd_btdemi-bold";
+    font-size: 85px;
+    letter-spacing: 2px;
+
+    text-transform: capitalize;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+.carousel-control {
+    opacity: 1;
+}
+#myCarousel2 .carousel-indicators li {
+    background-color: #000;
+    border: 1px solid #000;
+    width: 140px;
+}
+#myCarousel2 .carousel-indicators .active {
+    background-color: #ff4157;
+    border-color: #ff4157;
+    width: 140px;
+}
+#myCarousel2 .carousel-indicators {
+    bottom: -55px;
+}
+#myCarousel2 .carousel-indicators li + li {
+    margin-left: 15px;
+}
+.carousel-control {
+    top: 50%;
+}
+.carousel-control:focus, .carousel-control:hover {
+    opacity: 1;
+}
+#myCarousel1 .carousel-indicators .active{
+    background: #ff4157;
+    border-color: #ff4157;
+}
+/*tab control*/
+body {
+  padding : 10px ;
   
+}
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}

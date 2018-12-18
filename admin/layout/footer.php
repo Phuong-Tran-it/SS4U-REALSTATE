@@ -7,8 +7,8 @@
                             <h4>Đường Dẫn</h4>
                             <ul class="list-unstyled">
                                 <li><a href="<?php echo base_url() ?>home.php"> Chủ</a></li>
-                                <li><a href="<?php echo base_url() ?>about.php">Giới Thiệu</a></li>
-                                <li><a href="<?php echo base_url() ?>agents.php">Người Quản Lý</a></li>
+                                <li><a href="<?php echo base_url() ?>investor.php">Giới Thiệu</a></li>
+                                <li><a href="<?php echo base_url() ?>homesell.php">Người Quản Lý</a></li>
                                 <li><a href="<?php echo base_url() ?>gallery.php">Dự Án</a></li>
                                 <li><a href="<?php echo base_url() ?>blog.php">Blog</a></li>
                                 <li><a href="<?php echo base_url() ?>contact.php">Liên Hệ</a></li>

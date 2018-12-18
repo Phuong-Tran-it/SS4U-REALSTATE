@@ -98,7 +98,7 @@
             mysqli_query($this->link, $sql)or die("Lỗi truy vấn update--".mysqli_error($this->link));
             return mysqli_affected_rows($this->link);
         }
-        
+        /*
         //phân trang
         public function fetchJone($table,$sql,$page =0,$row,$pagi = false )
         {
@@ -127,7 +127,7 @@
           }
           return $data; 
         }
-        
+        */
    
     }
    ?>

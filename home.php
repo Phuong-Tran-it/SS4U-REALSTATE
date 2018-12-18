@@ -51,8 +51,8 @@
                                         <a href="#page-top" class="page-scroll"></a>
                                     </li>
                                     <li class="active"><a href="home.php" class="page-scroll">Trang Chủ</a></li>
-                                    <li><a href="about.php" class="page-scroll">Giới Thiệu</a></li>
-                                    <li><a href="agents.php" class="page-scroll">Đại Diện</a></li>
+                                    <li><a href="investor.php" class="page-scroll">Chủ Đầu Tư</a></li>
+                                    <li><a href="homesell.php" class="page-scroll">Nhà Đất Bán</a></li>
                                     <li><a href="gallery.php" class="page-scroll">Dự Án</a></li>
                                     <li> <a href="blog.php" class="page-scroll">Blog</a></li>
                                     <li> <a href="contact.php" class="page-scroll">Liên Hệ</a></li>
@@ -158,55 +158,7 @@
         <!--cây tìm kiếm-->
         <?php require_once __DIR__. "/admin/function/SearchTree.php";?>
         <!--end-->
-        <!--service block-->
-        <section class="service-block">
-            <div class="container">
-                <div class="text-head text-center">
-                    <h1>Dịch Vụ Của Chúng Tôi</h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12 grid remove-right-padd">
-                        <figure class="effect-marley scrollReveal sr-bottom sr-delay-1">
-                            <img alt="img11" src="public/admin/images/Home/Image1.png">
-                            <figcaption>
-                                <h2><span>Mua Bán</span></h2>
-                                <p>Mua Bán Nhà, Đất Nền, Chung Cư</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 grid remove-left-padd">
-                        <figure class="effect-marley scrollReveal sr-bottom sr-delay-2">
-                            <img alt="img11" src="public/admin/images/Home/Image2.png">
-                            <figcaption>
-                                <h2><span style="font-family: Helvetica, Arial">Cho Thuê</span></h2>
-                                <p>Cho Thuê Bất Động Sản</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 grid remove-right-padd">
-                        <figure class="effect-marley scrollReveal sr-bottom sr-delay-1">
-                            <img alt="img11" src="public/admin/images/Home/Image3.png">
-                            <figcaption>
-                                <h2><span style="font-family: Helvetica, Arial">Ký Gửi</span></h2>
-                                <p>Ký Gửi Bất Động Sản Không Sử Dụng</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 grid remove-left-padd">
-                        <figure class="effect-marley scrollReveal sr-bottom sr-delay-2">
-                            <img alt="img11" src="public/admin/images/Home/Image4.png" style="width:566px; height: 257px">
-                            <figcaption>
-                                <h2><span style="font-family: Helvetica, Arial">Đặt Chỗ</span></h2>
-                                <p>Nhận Đặt Chỗ những dự án bạn quan tâm.</p>
-                                <!--<a href="#">View more</a>-->
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </section>
-        <!--end-->
+        
         <!--counter block-->
         <section class="counter-block">
             <div class="container">
@@ -574,9 +526,9 @@
                         <div class="footer-block">
                             <h4>Đường Dẫn</h4>
                             <ul class="list-unstyled">
-                                <li class="active"><a href="home.php"> Chủ</a></li>
-                                <li><a href="about.php">Giới Thiệu</a></li>
-                                <li><a href="agents.php">Người Quản Lý</a></li>
+                                <li class="active"><a href="home.php">Trang Chủ</a></li>
+                                <li><a href="investor.php">Chủ Đầu Tư</a></li>
+                                <li><a href="homesell.php">Nhà Đất Bán</a></li>
                                 <li><a href="gallery.php">Dự Án</a></li>
                                 <li><a href="blog.php">Blog</a></li>
                                 <li><a href="contact.php">Liên Hệ</a></li>

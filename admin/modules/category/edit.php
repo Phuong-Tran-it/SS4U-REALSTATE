@@ -58,7 +58,7 @@
                <i class="fa fa-home"></i><a href="<?php echo base_url() ?>home.php">Trang Chủ</a>
             </li>
             <li>
-               <i></i><a href="index.php">Danh Sách Dự Án</a>
+               <i></i><a href="index.php">Danh Sách Chủ Đầu Tư</a>
             </li>
             <li class="active">
                <i class="fa fa-file"></i>Chỉnh Sửa
@@ -66,7 +66,7 @@
          </ol>
       </div>
       <div class="text-head text-center">
-         <h1>Chỉnh Sửa Dự Án</h1>
+         <h1>Chỉnh Sửa Chủ Đầu Tư</h1>
       </div>
       <div class="clearfit"></div>
       <?php if(isset($_SESSION['error'])):?>
