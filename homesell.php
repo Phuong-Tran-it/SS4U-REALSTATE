@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="public/admin/images/REALSTATE.png"/>
-      <title>Trang Chủ</title>
+      <title>Nhà Đất Bán</title>
       <!-- Bootstrap core CSS -->
       <link href="public/admin/css/scrolling-nav.css" rel="stylesheet" media="all">
       <link href="public/admin/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         </button>
                         <div class="logo">
-                           <a href="index.html"><img src="images/logoCTY.png" alt="logo"></a>
+                           <a href="index.html"><img src="public/admin/images/logoCTY.png" alt="logo"></a>
                         </div>
                      </div>
                   </div>
@@ -59,165 +59,15 @@
                      </div>
                   </div>
                   <!-- /navbar-collapse -->
-                  <div class="col-md-2 col-sm-1">
-                     <a class="search" id="searchtoggl"><i class="fa fa-search"></i></a>
-                     <div id="searchbar" class="clearfix">
-                        <form id="searchform">
-                           <button type="submit" id="searchsubmit" class="fa fa-search fa-lg"></button>
-                           <input type="search" name="search-icon" id="search-icon" placeholder="Keywords..." autocomplete="off">
-                        </form>
-                     </div>
-                  </div>
                </div>
             </div>
             <!-- /.container -->
          </nav>
       </header>
       <!--end-->
-      <div class="head-wrapper"></div>
-      <div class="clearfix"></div>
-      <section class="location-block">
-         <div class="container">
-            <div class="row info-block">
-               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 scrollReveal sr-bottom sr-delay-1">
-                  <a><i class="fa fa-map-marker"></i>
-                  <span> 15A Hoang Hoa Tham Street,<br>Binh Thanh district HCM City.</span></a>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 scrollReveal sr-bottom sr-delay-2">
-                  <a class="add-space" href="mail:demo@info.com"><i class="fa fa-envelope"></i>
-                  <span>demo@info.com</span></a>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 scrollReveal sr-bottom sr-delay-3">
-                  <a class="add-space" href="tel:XXXXXXXX"><i class="fa fa-phone"></i>
-                  <span>XXXXXXXX</span></a>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 scrollReveal sr-bottom sr-delay-4">
-                  <a class="add-space" href="www.ss4u.vn"><i class="fa fa fa-globe"></i>
-                  <span>www.ss4u.com</span></a>
-               </div>
-            </div>
-         </div>
-         <div class="clearfix"></div>
-      </section>
+      
       <!--Đăng Tin-->
-      <section>
-         <div class="container">
-            <form>
-               <div class="form-row">
-                  <div class="panel panel-default">
-                     <div class="panel-heading">Thông Tin Chung</div>
-                     <div class="panel-body">
-                        <div class="form-group col-md-3">
-                           <label for="inputEmail4">Mã Block</label>
-                           <input type="email" class="form-control" id="inputEmail4" placeholder="">
-                        </div>
-                        <div class="form-group col-md-3">
-                           <label for="inputEmail4">Mã Tòa Nhà</label>
-                           <input type="email" class="form-control" id="inputEmail4" placeholder="">
-                        </div>
-                        <div class="form-group col-md-3">
-                           <label for="inputEmail4">Số Tầng</label>
-                           <input type="email" class="form-control" id="inputEmail4" placeholder="">
-                        </div>
-                        <div class="form-group col-md-3">
-                           <label for="inputEmail4">Số Nhà</label>
-                           <input type="email" class="form-control" id="inputEmail4" placeholder="">
-                        </div>
-                        <div class="from-group col-md-8">
-                           <label for="duan">Chọn Dự án </label>
-                           <select class="form-control form-control-lg" id="duan">
-                              <option>Chung Cư Thuộc Dự án</option>
-                           </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="inputEmail4">Hướng Nhà/Hướng Cửa Sổ</label>
-                           <input type="email" class="form-control" id="inputEmail4" placeholder="">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group col-md-4">
-                  <div class="panel panel-default">
-                     <div class="panel-heading">Nhà Phố</div>
-                     <div class="panel-body">
-                        <div class="form-group">
-                           <label for="inputAddress">Số Lượng Tầng</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                        <div class="form-group">
-                           <label for="inputAddress">Diện Tích Lô Đất</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                        <div class="form-group">
-                           <label for="inputAddress2">Diện Tích Sàn</label>
-                           <input type="text" class="form-control" id="inputAddress2" placeholder="">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group col-md-4">
-                  <div class="panel panel-default">
-                     <div class="panel-heading">Căn Hộ</div>
-                     <div class="panel-body">
-                        <div class="form-group">
-                           <label for="inputAddress">Diện Tích Tim Tường</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                        <div class="form-group">
-                           <label for="inputAddress">Diện Tích Thông Thủy</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="form-group col-md-4">
-                  <div class="panel panel-default">
-                     <div class="panel-heading">Thông Tin Chi Tiết</div>
-                     <div class="panel-body">
-                        <div class="form-group col-md-6">
-                           <label for="inputAddress">Số Lượng Phòng</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="inputAddress">Số Lượng WC</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="inputAddress">Diện Tích Lửng</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="inputAddress">Tình trạng</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="inputAddress">Ngày Khởi Công</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="inputAddress">Ngày Hoàn Thành</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="">
-                        </div>
-                        <div class="form-group">
-    <label for="exampleFormControlFile1">Chọn Hình Ảnh</label>
-    <input type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" />
-  </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="form-row">
-                        <div class="form-group">
-    <label for="exampleFormControlTextarea1">Nhập chi tiết giới thiệu:</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-                     </div>
-<div class="pull-right">
-               <button type="submit" class="btn btn-primary">Đăng Tin</button>
-           </div>
-            </form>
-         </div>
-      </section>
+      
       <!--end-->
       <!--footer-->
       <footer>
@@ -287,7 +137,7 @@
       <!--end-->
       <!--back to top--->
       <a id="back-to-top" class="scrollTop back-to-top" href="javascript:void(0);" style="display: none;">
-      <img src="images/top-arrow.png" alt="back-to-top"/>
+      <img src="public/admin/images/top-arrow.png" alt="back-to-top"/>
       </a>
    </body>
 </html>

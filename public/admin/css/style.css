@@ -1572,3 +1572,11 @@ body {
   background-color: #428bca;
   padding : 5px 15px;
 }
+.text-danger
+{
+    color: red;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}

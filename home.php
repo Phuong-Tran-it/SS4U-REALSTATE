@@ -31,20 +31,17 @@
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                     <div class="row">
+                        
                         <div class="col-md-3 col-sm-3">
                             <div class="navbar-header page-scroll">
                                 <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
                                 </button>
                                 <div class="logo">
                                     <a href="home.php"><img src="public/admin/images/logoCTY.png" alt="logo"></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-7 col-sm-8 remove-left">
+                        <div class="col-md-8 col-sm-8 remove-left">
                             <div class="collapse navbar-collapse navbar-ex1-collapse">
                                 <ul class="nav navbar-nav">
                                     <li class="hidden active">
@@ -53,13 +50,22 @@
                                     <li class="active"><a href="home.php" class="page-scroll">Trang Chủ</a></li>
                                     <li><a href="investor.php" class="page-scroll">Chủ Đầu Tư</a></li>
                                     <li><a href="homesell.php" class="page-scroll">Nhà Đất Bán</a></li>
-                                    <li><a href="gallery.php" class="page-scroll">Dự Án</a></li>
-                                    <li> <a href="blog.php" class="page-scroll">Blog</a></li>
-                                    <li> <a href="contact.php" class="page-scroll">Liên Hệ</a></li>
+                                    <li><a href="gallery.php" class="page-scroll">                   </a>      </li>
+                                    <li> <a href="blog.php" class="page-scroll">        </a>        </li>
+                                    <li> <a href="contact.php" class="page-scroll">     </a>     </li>
+                                    <li>
+                                        <a href="dang-nhap.php"><i class="fa fa-unlock"></i> Đăng Ký</a>
+                                    </li>
                                 </ul>
+
+                                    
+                                
                             </div>
+                            
+                                
+                            
                         </div>
-                        <!-- /navbar-collapse -->
+                        <!-- /navbar-collapse 
                         <div class="col-md-2 col-sm-1">
                             <a class="search" id="searchtoggl"><i class="fa fa-search"></i></a>
                             <div id="searchbar" class="clearfix">
@@ -69,6 +75,7 @@
                                 </form>
                             </div>
                         </div>
+                        -->
                     </div>
                 </div>
                 <!-- /.container -->
@@ -85,6 +92,7 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="public/admin/images/Home/building.png" style="width:100%; height: 720px" alt="First slide">
+                    <!--
                     <div class="carousel-caption">
                         <div class="contact-form">
                             <input type="text" placeholder="Tên">
@@ -96,9 +104,11 @@
                             </div>
                         </div>
                     </div>
+                -->
                 </div>
                 <div class="item">
                     <img src="public/admin/images/Home/villavip.png" style="width:100%; height: 720px" alt="First slide">
+                    <!--
                     <div class="carousel-caption">
                         <div class="contact-form">
                             <input type="text" placeholder="Tên">
@@ -110,9 +120,11 @@
                             </div>
                         </div>
                     </div>
+                -->
                 </div>
                 <div class="item">
                     <img src="public/admin/images/Home/banner3.png" style="width:100%; height: 720px" alt="First slide">
+                    <!--
                     <div class="carousel-caption">
                         <div class="contact-form">
                             <input type="text" placeholder="Tên">
@@ -124,6 +136,7 @@
                             </div>
                         </div>
                     </div>
+                -->
                 </div>
             </div>
             <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="fa fa-angle-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="fa fa-angle-right"></span></a>
@@ -191,24 +204,33 @@
             </div>
             <div class="clearfix"></div>
         </section>
+        
         <!---end--->
-        <!--gallery block-->
+        <!--gallery block
         <section class="gallery-block">
             <div class="container">
                 <div class="text-head text-center">
-                    <h1>Dự Án</h1>
+                    <h1>Sản Phẩm Bán Chạy Nhất</h1>
                 </div>
+                <div class="staff-team">
+                    <div class="row">
                 <ul class="bxslider">
-                    <li><img src="public/admin/images/Home/Image6.png"/></li>
-                    <li><img src="public/admin/images/Home/Image7.png"/></li>
-                    <li><img src="public/admin/images/Home/Image8.png"/></li>
-                    <li><img src="public/admin/images/Home/Image9.png"/></li>
-                    <li><img src="public/admin/images/Home/Image10.png"/></li>
+                    <div class="team_pos">
+                                <li><img src="public/admin/images/Home/Image6.png"/></li>
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-google"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                 </ul>
+            </div></div>
             </div>
         </section>
         <!---end--->
-        <!--gallery block-->
+        <!--gallery block
         <section class="category-block">
             <div class="container">
                 <div class="text-head text-center">
@@ -278,12 +300,12 @@
                 </div>
             </div>
         </section>
-        <!--end-->
+        end-->
         <!--service block-->
         <section class="recent-property-block">
             <div class="container">
                 <div class="text-head text-center">
-                    <h1>Bất Động Sản Đang Hot</h1>
+                    <h1>Bất Động Sản Ưu Tiên</h1>
                 </div>
                 <div class="row">
                     <div class="product-layout col-md-4 col-sm-6 col-xs-12">
@@ -334,116 +356,210 @@
                 </div>
             </div>
         </section>
-        <!--advantage block-->
-        <section class="advantage-block">
+        <!--testimonials-->
+        <section class="staff-block">
             <div class="container">
                 <div class="text-head text-center">
-                    <h1>Lợi Ích Sử Dụng Dịch Vụ Của Chúng Tôi</h1>
+                    <h1>Mới Nhất</h1>
                 </div>
-            </div>
-            <div class="advantage-block-full-image">
-                <div class="container">
+                <div class="staff-team">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12 ">
-                            <div class="advantage-inner-block scrollReveal sr-bottom sr-delay-1">
-                                <figure class="icon">
-                                    <i class="fa fa-location-arrow fa-3x"></i>
-                                </figure>
-                                <h2 class="head-title">Vị Trí Khác Nhau</h2>
-                                <p class="desc"></p>
+                        <div class=" col-sm-2 col-sm-4 team_gd1 scrollReveal sr-bottom sr-delay-1">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
                             </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="advantage-inner-block scrollReveal sr-bottom sr-delay-2">
-                                <figure class="icon">
-                                    <i class="fa fa-camera fa-3x"></i>
-                                </figure>
-                                <h2 class="head-title">Xem Trước</h2>
-                                <p class="desc">Xem trước căn hộ mình muốn mua</p>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-2">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
                             </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="advantage-inner-block scrollReveal sr-bottom sr-delay-3">
-                                <figure class="icon">
-                                    <i class="fa fa-lock fa-3x"></i>
-                                </figure>
-                                <h2 class="head-title">Bảo Mật</h2>
-                                <p class="desc">Mọi thông tin khách hàng và giao dịch đều được bảo mật tuyệt đối</p>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-3">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
                             </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="advantage-inner-block scrollReveal sr-bottom sr-delay-4">
-                                <figure class="icon">
-                                    <i class="fa fa-money fa-3x"></i>
-                                </figure>
-                                <h2 class="head-title">Không Hoa Hồng</h2>
-                                <p class="desc">Mua đúng giá</p>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-4">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>                                    </div>
+                                </div>
                             </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-5">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-center sr-delay-5">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
+                                
                         </div>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </section>
         <!--end-->
-        <!--testimonials-->
-        <section class="testimonial-block">
+        <!--Bán Nhiều Nhất-->
+        <section class="staff-block">
             <div class="container">
                 <div class="text-head text-center">
-                    <h1>Phản Hồi Khách Hàng</h1>
+                    <h1>Bán Nhiều Nhất</h1>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="testblock scrollReveal sr-bottom sr-delay-1">
-                            <div class="media">
-                                <div class="media-left">
-                                    <img style="width:60px" class="media-object" src="images/Home/Image18.png">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Anh Châu</h4>
-                                </div>
-                            </div>
-                            <p>Cảm ơn rất nhiều vì phản hồi nhanh. Tôi đã rất ấn tượng. giải pháp của bạn là tuyệt vời! Thẩm quyền của bạn là hợp lý</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="testblock scrollReveal sr-bottom sr-delay-2">
-                            <div class="media">
-                                <div class="media-left">
-                                    <img style="width:60px" class="media-object" src="images/Home/Image19.png">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Anh Quý</h4>
+                <div class="staff-team">
+                    <div class="row">
+                        <div class=" col-sm-2 col-sm-4 team_gd1 scrollReveal sr-bottom sr-delay-1">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <p>Cảm ơn rất nhiều vì phản hồi nhanh. Tôi đã rất ấn tượng. giải pháp của bạn là tuyệt vời! Thẩm quyền của bạn là hợp lý</p>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="testblock scrollReveal sr-bottom sr-delay-1">
-                            <div class="media">
-                                <div class="media-left">
-                                    <img style="width:60px" class="media-object" src="images/Home/Image20.png">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Anh Lộc</h4>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-2">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <p>Cảm ơn rất nhiều vì phản hồi nhanh. Tôi đã rất ấn tượng. giải pháp của bạn là tuyệt vời! Thẩm quyền của bạn là hợp lý</p>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="testblock scrollReveal sr-bottom sr-delay-2">
-                            <div class="media">
-                                <div class="media-left">
-                                    <img style="width:60px" class="media-object" src="images/Home/Image21.png">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Anh Vỹ</h4>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-3">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <p>Cảm ơn rất nhiều vì phản hồi nhanh. Tôi đã rất ấn tượng. giải pháp của bạn là tuyệt vời! Thẩm quyền của bạn là hợp lý</p>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-4">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>                                    </div>
+                                </div>
+                            </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-5">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-center sr-delay-5">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
+                                
                         </div>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </section>
@@ -452,65 +568,99 @@
         <section class="staff-block">
             <div class="container">
                 <div class="text-head text-center">
-                    <h1>nhân viên của chúng tôi</h1>
+                    <h1>Xem Nhiều Nhất</h1>
                 </div>
                 <div class="staff-team">
                     <div class="row">
-                        <div class="col-md-3 col-sm-4 col-xs-12 team_gd1 scrollReveal sr-bottom sr-delay-1">
+                        <div class=" col-sm-2 col-sm-4 team_gd1 scrollReveal sr-bottom sr-delay-1">
                             <div class="team_pos">
-                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:268px; height: 315px">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
                                 <div class="team_info">
                                     <div class="social-icons-effect">
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-google"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <h4><a>Trần Nhật D</a></h4>
-                            <p>Người Bán Hàng</p>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-12 team_gd1 scrollReveal sr-bottom sr-delay-2">
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-2">
                             <div class="team_pos">
-                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:268px; height: 315px">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
                                 <div class="team_info">
                                     <div class="social-icons-effect">
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-google"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <h4><a>Trấn Quốc C</a></h4>
-                            <p>Quản Lý</p>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-12 team_gd1 scrollReveal sr-bottom sr-delay-3">
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-3">
                             <div class="team_pos">
-                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:268px; height: 315px">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
                                 <div class="team_info">
                                     <div class="social-icons-effect">
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-google"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <h4><a>Trần Văn A</a></h4>
-                            <p>Người Bán Hàng</p>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-12 team_gd1 scrollReveal sr-bottom sr-delay-4">
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-4">
                             <div class="team_pos">
-                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:268px; height: 315px">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
                                 <div class="team_info">
                                     <div class="social-icons-effect">
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
-                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-google"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>                                    </div>
+                                </div>
+                            </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-5">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <h4><a>Nguyễn Văn B</a></h4>
-                            <p>Quản Lý</p>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-center sr-delay-5">
+                            <div class="team_pos">
+                                <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                                <div class="team_info">
+                                    <div class="social-icons-effect">
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                                        <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Căn Hộ Kingdom 101</p>
+                                <p>80 m²  / 2 Phòng Tắm</p>
+                                <p>3 Phòng Ngủ / 1.100 Căn</p>
+                                
                         </div>
                     </div>
                     <div class="clearfix"></div>

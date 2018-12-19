@@ -110,7 +110,6 @@
             {
                $_SESSION['error']="Thêm Mới thất bại";
             }
-            _debug($data);
       }
    }
    ?>

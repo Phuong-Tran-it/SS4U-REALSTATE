@@ -63,6 +63,13 @@
             header("location:".base_url()."admin/modules/admin");exit();
         }
     }
+    if (!function_exists('redirectAdmin3'))
+    {
+        function redirectAdmin3($url="")
+        {
+            header("location:".base_url()."");exit();
+        }
+    }
 	//kiểm tra xem nếu hàm đó  ko tồn tịa thì mới tạo hàm đó !﻿
 	if( ! function_exists('xss_clean') ) {
         function xss_clean($data)

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="public/admin/images/REALSTATE.png"/>
-        <title>Trang Chủ</title>
+        <title>Chủ Đầu Tư</title>
         <!-- Bootstrap core CSS -->
         <link href="public/admin/css/scrolling-nav.css" rel="stylesheet" media="all">
         <link href="public/admin/css/bootstrap.min.css" rel="stylesheet">
@@ -136,7 +136,7 @@
 
          <div class="tab-content clearfix">
            <div class="tab-pane active" id="1a">
-          <h3>Content's background color is the same for the tab</h3>
+          
             </div>
             <div class="tab-pane" id="2a">
           <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
