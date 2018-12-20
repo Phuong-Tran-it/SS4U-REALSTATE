@@ -42,7 +42,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-7 col-sm-8 remove-left">
+                  <div class="col-md-8 col-sm-8 remove-left">
                      <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="nav navbar-nav">
                            <li class="hidden active">
@@ -51,10 +51,21 @@
                            <li><a href="home.php" class="page-scroll">Trang Chủ</a></li>
                            <li class="active"><a class="page-scroll">Chủ Đầu Tư</a></li>
                            <li><a href="homesell.php" class="page-scroll">Nhà Đất Bán</a></li>
-                           <li><a href="gallery.html" class="page-scroll">Dự Án</a></li>
-                           <li> <a href="blog.html" class="page-scroll">Blog</a></li>
-                           <li> <a href="contact.html" class="page-scroll">Liên Hệ</a></li>
-                        </ul>
+                           <li> <a href="blog.php" class="page-scroll">        </a>        </li>
+                           <li> <a href="contact.php" class="page-scroll">     </a>     </li>
+                           <?php require_once __DIR__. "/admin/autoload/autoload.php"; ?>
+                           <?php if(isset($_SESSION['name_user'])): ?>
+                           <li >
+                              <a href="/SS4UREALSTATE/dang-nhap.php#"><i class="fa fa-user"></i>My Account</i></a>
+                           </li>
+                           <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+                           <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
+                           <?php else :?>
+                            <li>
+                              <a href="/SS4UREALSTATE/dang-nhap.php"><i class="fa fa-unlock"></i>&nbsp; Đăng Nhập</a>
+                           </li>
+                           <?php endif;?>
+                              </ul>
                      </div>
                   </div>
                   <!-- /navbar-collapse -->

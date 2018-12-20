@@ -67,7 +67,7 @@
     {
         function redirectAdmin3($url="")
         {
-            header("location:".base_url()."");exit();
+            header("location:".base_url()."admin/modules/User");exit();
         }
     }
 	//kiểm tra xem nếu hàm đó  ko tồn tịa thì mới tạo hàm đó !﻿
