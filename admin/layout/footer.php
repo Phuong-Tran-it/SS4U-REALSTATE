@@ -6,7 +6,7 @@
                         <div class="footer-block">
                             <h4>Đường Dẫn</h4>
                             <ul class="list-unstyled">
-                                <li><a href="<?php echo base_url() ?>home.php"> Chủ</a></li>
+                                <li><a href="<?php echo base_url() ?>home.php"> Trang Chủ</a></li>
                                 <li><a href="<?php echo base_url() ?>investor.php">Giới Thiệu</a></li>
                                 <li><a href="<?php echo base_url() ?>homesell.php">Người Quản Lý</a></li>
                                 <li><a href="<?php echo base_url() ?>gallery.php">Dự Án</a></li>
