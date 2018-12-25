@@ -307,12 +307,12 @@
                         </div>
                         <div class="form-group">
                            <label for="inputAddress">Ngày Khởi Công</label>
-                           <input type="datetime-local" class="form-control" id="inputAddress" placeholder="" name="OPENING_DAY" value="<?php echo  $data['OPENING_DAY'] ?>">
+                           <input type="date" class="form-control" id="inputAddress" placeholder="" name="OPENING_DAY" value="<?php echo  $data['OPENING_DAY'] ?>">
                         </div>
                         <br>
                         <div class="form-group">
                            <label for="inputAddress">Ngày Hoàn Thành</label>
-                           <input type="datetime-local" class="form-control" id="inputAddress" placeholder="" name="FINAL_DAY" value="<?php echo  $data['FINAL_DAY'] ?>">
+                           <input type="date" class="form-control" id="inputAddress" placeholder="" name="FINAL_DAY" value="<?php echo  $data['FINAL_DAY'] ?>">
                         </div>
                         <div class="form-group">
                            <label for="exampleFormControlFile1">Chọn Hình Ảnh</label>

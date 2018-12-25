@@ -56,7 +56,7 @@
                            <li> <a href="contact.php" class="page-scroll">     </a>     </li>
                            <?php if(isset($_SESSION['name_user'])): ?>
                            <li >
-                              <a href="/SS4UREALSTATE/dang-nhap.php#"><i class="fa fa-user"></i>My Account</i></a>
+                              <a href="/SS4UREALSTATE/dang-nhap.php#"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
                            <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
                            <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>

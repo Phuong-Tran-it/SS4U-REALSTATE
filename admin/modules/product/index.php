@@ -58,6 +58,7 @@
                   <thead>
                      <tr>
                         <th>ID</th>
+                        <th>Thể Loại</th>
                         <th>Tên Chi Tiết </th>
                         <th>Dự Án</th>
                         <th>block</th>
@@ -70,6 +71,7 @@
                      <?php $stt=1; foreach ($product as $item): ?>
                      <tr>
                         <td><?php echo $stt ?></td>
+                        <td><?php echo $item['kind'] ?></td>
                         <td><?php echo $item['PORTION_ID'] ?></td>
                         <td><?php echo $item['BUILDING_ID'] ?></td>
                         <td><?php echo $item['category_id'] ?></td>

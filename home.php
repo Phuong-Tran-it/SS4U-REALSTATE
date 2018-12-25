@@ -27,6 +27,7 @@
    <body>
       <!--header--->
       <header>
+
          <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                <div class="row">
@@ -53,7 +54,7 @@
                            <?php require_once __DIR__. "/admin/autoload/autoload.php";?>
                            <?php if(isset($_SESSION['name_user'])): ?>
                            <li >
-                              <a href="/SS4UREALSTATE/dang-nhap.php#"><i class="fa fa-user"></i>My Account</i></a>
+                              <a href="/SS4UREALSTATE/dang-nhap.php#"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
                            <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
                            <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
@@ -81,6 +82,7 @@
             <!-- /.container -->
          </nav>
       </header>
+
       <!--end-->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
          <!-- Indicators -->
@@ -141,6 +143,7 @@
          </div>
          <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="fa fa-angle-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="fa fa-angle-right"></span></a>
       </div>
+
       <div class="clearfix"></div>
       <!--Thông Tin Liên Lạc-->
       <?php require_once __DIR__. "/layouts/lienlac.php";?>

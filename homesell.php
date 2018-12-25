@@ -58,7 +58,7 @@
                            <?php require_once __DIR__. "/admin/autoload/autoload.php"; ?>
                            <?php if(isset($_SESSION['name_user'])): ?>
                            <li >
-                              <a href="/SS4UREALSTATE/dang-nhap.php#"><i class="fa fa-user"></i>My Account</i></a>
+                              <a href="/SS4UREALSTATE/dang-nhap.php#"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
                            <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
                            <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
@@ -90,12 +90,10 @@
                <div class="footer-block">
                   <h4>Đường Dẫn</h4>
                   <ul class="list-unstyled">
-                     <li><a href="home.html">Trang Chủ</a></li>
-                     <li><a href="about.html">Giới Thiệu</a></li>
-                     <li class="active"><a>Đại Diện</a></li>
-                     <li><a href="gallery.html">Dự Án</a></li>
-                     <li><a href="blog.html">Blog</a></li>
-                     <li><a href="contact.html">Liên Hệ</a></li>
+                     <li><a href="home.php">Trang Chủ</a></li>
+                     <li><a href="investor.php">Chủ Đầu Tư</a></li>
+                     <li class="active"><a>Nhà Đất Bán</a></li>
+
                   </ul>
                </div>
             </div>
