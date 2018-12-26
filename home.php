@@ -1,3 +1,14 @@
+<?php require_once __DIR__. "/admin/autoload/autoload.php";?>
+<?php 
+      //Mới Nhất
+      $sqlHomenew= "SELECT * FROM product WHERE 1 ORDER BY CREATION_DATE DESC LIMIT 10"; 
+      $productnew= $db->fetchsql($sqlHomenew);
+      //xem nhiều
+      $sqlHomeView= "SELECT * FROM product WHERE 1 ORDER BY view DESC LIMIT 10"; 
+      $ProductView= $db->fetchsql($sqlHomeView);
+      $data= [];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -5,6 +16,9 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="public/admin/images/REALSTATE.png"/>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
       <title>Trang Chủ</title>
       <!-- Bootstrap core CSS -->
       <link href="public/admin/css/scrolling-nav.css" rel="stylesheet" media="all">
@@ -51,13 +65,13 @@
                            <li><a href="homesell.php" class="page-scroll">Nhà Đất Bán</a></li>
                            <li> <a href="blog.php" class="page-scroll">        </a>        </li>
                            <li> <a href="contact.php" class="page-scroll">     </a>     </li>
-                           <?php require_once __DIR__. "/admin/autoload/autoload.php";?>
+                           
                            <?php if(isset($_SESSION['name_user'])): ?> 
                            <li >
                               <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
 
-                           <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+                           <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-shopping-cart"></i></a></li>
                            <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
 
                            <?php else :?>
@@ -96,7 +110,7 @@
          </ol>
          <div class="carousel-inner">
             <div class="item active">
-               <img src="public/admin/images/Home/building.png" style="width:100%; height: 720px" alt="First slide">
+               <img src="public/admin/images/Home/building.png" style="width:100%; height: 500px" alt="First slide">
                <!--
                   <div class="carousel-caption">
                       <div class="contact-form">
@@ -112,7 +126,7 @@
                   -->
             </div>
             <div class="item">
-               <img src="public/admin/images/Home/villavip.png" style="width:100%; height: 720px" alt="First slide">
+               <img src="public/admin/images/Home/villavip.png" style="width:100%; height: 500px" alt="First slide">
                <!--
                   <div class="carousel-caption">
                       <div class="contact-form">
@@ -128,7 +142,7 @@
                   -->
             </div>
             <div class="item">
-               <img src="public/admin/images/Home/banner3.png" style="width:100%; height: 720px" alt="First slide">
+               <img src="public/admin/images/Home/banner3.png" style="width:100%; height: 500px" alt="First slide">
                <!--
                   <div class="carousel-caption">
                       <div class="contact-form">
@@ -368,96 +382,25 @@
             </div>
             <div class="staff-team">
                <div class="row">
-                  <div class=" col-sm-2 col-sm-4 team_gd1 scrollReveal sr-bottom sr-delay-1">
+
+                <?php foreach ($productnew as $item): ?>
+                  <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
                      <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                        <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
                         <div class="team_info">
                            <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+
+                              <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-info"></i></a>
                               <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                              <a class="face_one" href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
                            </div>
                         </div>
                      </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
+                     <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
+                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice($item['price']) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
+                   </a>
                   </div>
-                  <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-2">
-                     <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
-                  </div>
-                  <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-3">
-                     <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
-                  </div>
-                  <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-4">
-                     <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>                                    
-                           </div>
-                        </div>
-                     </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
-                  </div>
-                  <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-5">
-                     <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
-                  </div>
-                  <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-center sr-delay-5">
-                     <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
-                  </div>
+                <?php endforeach ?>
                </div>
                <div class="clearfix"></div>
             </div>
@@ -576,96 +519,24 @@
             </div>
             <div class="staff-team">
                <div class="row">
-                  <div class=" col-sm-2 col-sm-4 team_gd1 scrollReveal sr-bottom sr-delay-1">
+                  <?php foreach ($ProductView as $item): ?>
+                  <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
                      <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
+                        <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
                         <div class="team_info">
                            <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
+
+                              <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-info"></i></a>
                               <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                              <a class="face_one" href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
                            </div>
                         </div>
                      </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
+                     <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
+                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice($item['price']) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
+                   </a>
                   </div>
-                  <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-2">
-                     <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
-                  </div>
-                  <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-3">
-                     <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
-                  </div>
-                  <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-4">
-                     <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>                                    
-                           </div>
-                        </div>
-                     </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
-                  </div>
-                  <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-bottom sr-delay-5">
-                     <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
-                  </div>
-                  <div class="col-md-2 col-sm-4 col-xs-11 team_gd1 scrollReveal sr-center sr-delay-5">
-                     <div class="team_pos">
-                        <img alt=" " src="images/Home/images.png" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                     <p>Căn Hộ Kingdom 101</p>
-                     <p>80 m²  / 2 Phòng Tắm</p>
-                     <p>3 Phòng Ngủ / 1.100 Căn</p>
-                  </div>
+                <?php endforeach ?>
                </div>
                <div class="clearfix"></div>
             </div>

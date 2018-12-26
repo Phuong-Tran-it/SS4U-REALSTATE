@@ -120,5 +120,10 @@
 		$str = preg_replace('/([\s]+)/','-',$str);
 		return $str;
 	}
+    function formatPrice($number = 9000000000000000)
+    {
+        $number = intval($number);
+        return $number = number_format($number,0,'.',',');
+    }
 
 ?>

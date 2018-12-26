@@ -663,11 +663,14 @@ figure.effect-selena:hover p {
 .advantage-inner-block:hover .icon::before {
     transform: scale(1);
 }
-
+.bor
+{
+    border: 1px solid #e3e3e3;
+}
 /*staff block*/
 .team_pos {
     margin: auto;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     transition: all 0.3s linear 0s;
 }
@@ -725,7 +728,7 @@ figure.effect-selena:hover p {
 }
 a.face_one i {
     font-size: 22px;
-    line-height: 2.4;
+    line-height: 1;
     text-align: center;
 }
 .team_gd1:hover .team_info{
@@ -800,6 +803,7 @@ a.face_one i {
     margin-bottom: 0;
 }
 .product-thumb .image img, .team_pos img {
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -1544,13 +1548,18 @@ body {
 }
 
 #exTab1 .tab-content {
-  color : white;
+  color : black;
   background-color: #428bca;
   padding : 5px 15px;
 }
 
 #exTab2 h3 {
-  color : white;
+  color : black;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+#exTab2 th {
+  color : black;
   background-color: #428bca;
   padding : 5px 15px;
 }
@@ -1585,3 +1594,19 @@ body {
   margin: 0 auto;
 }
 /**/
+.col-wrap {
+    display: table; 
+    width: 100%; 
+}
+
+.col {
+    display: table-cell;
+    padding: 1rem
+}
+.col:nth-child(even){
+    background-color:white;
+}
+.col:nth-child(odd){
+    background-color:white;
+}
+

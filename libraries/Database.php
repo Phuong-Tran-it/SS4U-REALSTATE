@@ -128,6 +128,19 @@
           return $data; 
         }
         */
+        public function fetchsql( $sql )
+        {
+            $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn sql " .mysqli_error($this->link));
+            $data = [];
+            if( $result)
+            {
+                while ($num = mysqli_fetch_assoc($result))
+                {
+                    $data[] = $num;
+                }
+            }
+            return $data;
+        }
    
     }
    ?>
