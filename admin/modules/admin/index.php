@@ -68,7 +68,7 @@
                         <td><?php echo $item['email'] ?></td>
                         <td><?php echo $item['phone'] ?></td>
                         <td>
-                           <a class="btn btn-xs btn-info"href="edit.php?id=<?php echo $item['id']?>"><i class="fa fa-edit">Sửa</i></a>
+                           <a class="btn btn-xs btn-info" href="edit.php?id=<?php echo $item['id']?>"><i class="fa fa-edit">Sửa</i></a>
                            <a class="btn btn-xs btn-danger"href="delete.php?id=<?php echo $item['id']?>"><i class="fa fa-times">Xóa</i></a>
                         </td>
                      </tr>

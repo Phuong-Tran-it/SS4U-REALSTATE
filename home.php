@@ -52,17 +52,20 @@
                            <li> <a href="blog.php" class="page-scroll">        </a>        </li>
                            <li> <a href="contact.php" class="page-scroll">     </a>     </li>
                            <?php require_once __DIR__. "/admin/autoload/autoload.php";?>
-                           <?php if(isset($_SESSION['name_user'])): ?>
+                           <?php if(isset($_SESSION['name_user'])): ?> 
                            <li >
-                              <a href="/SS4UREALSTATE/dang-nhap.php#"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
+                              <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
+
                            <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
                            <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
+
                            <?php else :?>
                            <li>
                               <a href="/SS4UREALSTATE/dang-nhap.php"><i class="fa fa-unlock"></i>&nbsp; Đăng Nhập</a>
                            </li>
                            <?php endif;?>
+
                         </ul>
                      </div>
                   </div>

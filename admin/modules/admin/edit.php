@@ -112,7 +112,7 @@
          </ol>
       </div>
       <div class="text-head text-center">
-         <h1>Thêm Mới Admin</h1>
+         <h1>Chỉnh Sửa Thông Tin Admin</h1>
       </div>
       <div class="clearfit"></div>
       <?php if(isset($_SESSION['error'])):?>
