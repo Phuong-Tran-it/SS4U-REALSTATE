@@ -38,7 +38,7 @@
          }
          else
          {
-            $_SESSION['error'] = " Đăng Nhập Thất Bại";
+            $_SESSION['error'] = " Sai Tên Tài Khoản Hoặc Mật Khẩu";
          }
    
       }

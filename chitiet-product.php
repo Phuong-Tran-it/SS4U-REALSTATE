@@ -193,7 +193,7 @@
                                <ul id="right">
                                     <li><h3> <?php echo $product['HOUSE_DETAIL_CODE'] ?> </h3></li>
                                     <li><p><strong><b class="price"><?php echo $product['price'] ?>đ</b></strong></li>
-                                    <li><a href="" class="btn btn-primary"> <i class="fa fa-shopping-basket"></i>Add TO Cart</a></li>
+                                    <li><a href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $product['id']?>" class="btn btn-primary"> <i class="fa fa-shopping-basket"></i>Chọn</a></li>
                                </ul>
                             </div>
 

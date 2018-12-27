@@ -58,7 +58,7 @@
                            <li >
                               <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
-                           <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+                           <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-shopping-cart"></i></a></li>
                            <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
                            <?php else :?>
                             <li>

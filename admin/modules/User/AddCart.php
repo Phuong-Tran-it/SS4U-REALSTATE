@@ -7,12 +7,12 @@
       }
           $id = intval(getInput('id'));
     $product = $db->fetchID("product",$id);
-    //kiểm tra session
+    //kiểm tra session tồn tại hay không
     if(! isset($_SESSION['cart'][$id]))
     {
     	$_SESSION['cart'][$id]['HOUSE_DETAIL_CODE'] = $product['HOUSE_DETAIL_CODE'];
     	$_SESSION['cart'][$id]['thunbar'] = $product['thunbar'];
-    	$_SESSION['cart'][$id]['price'] = $product['price'];
+    	$_SESSION['cart'][$id]['price'] = ((100-$product['sale'])* $product['price'])/100;
     	$_SESSION['cart'][$id]['id'] = $product['id'];
     	$_SESSION['cart'][$id]['qty'] = 1;
     }

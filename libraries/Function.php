@@ -1,4 +1,5 @@
 <?php
+    //debug phun dữ liệu ra
 	function _debug($data) {
 
         echo '<pre style="background: #000; color: #fff; width: 100%; overflow: auto">';
@@ -18,6 +19,7 @@
         }
         echo '</pre>';
     }
+    //tải dữ liệu lên
     function uploads()
     {
         return base_url() . "public/uploads/";
@@ -30,10 +32,12 @@
             header("location: ".base_url()."{$url}");exit();
         }
     }
+    //insert dữ liệu
 	function postInput($string)
 	{
 		return isset($_POST[$string]) ? $_POST[$string]:'';
 	}
+    //lấy dữ liệu
 	function getInput($string)
 	{
 		return isset($_GET[$string]) ? $_GET[$string]:'';
@@ -68,6 +72,13 @@
         function redirectAdmin3($url="")
         {
             header("location:".base_url()."admin/modules/User");exit();
+        }
+    }
+    if (!function_exists('redirectAdmin4'))
+    {
+        function redirectAdmin4($url="")
+        {
+            header("location:".base_url()."admin/modules/transaction");exit();
         }
     }
 	//kiểm tra xem nếu hàm đó  ko tồn tịa thì mới tạo hàm đó !﻿
@@ -108,6 +119,7 @@
             return $data;
         }
     }
+    //đổi có dấu thành không dấu
 	function to_slug($str){
 		$str =trim(mb_strtolower($str));
 		$str = preg_replace('/(á|à|ả|ã|ạ|ă|ắ|ặ|ằ|ẳ|ẵ|â|ấ|ầ|ẩ|ẫ|ậ)/','a',$str);
@@ -120,10 +132,27 @@
 		$str = preg_replace('/([\s]+)/','-',$str);
 		return $str;
 	}
-    function formatPrice($number = 9000000000000000)
+    //thêm dấu , vào giá tiền
+    function formatPrice($number = 9000000000000)
     {
         $number = intval($number);
         return $number = number_format($number,0,'.',',');
     }
-
+    function sale($number)
+    {
+        $number = intval($number);
+        if($number<5000000)
+        {
+            return 0;
+        }
+        else if($number<10000000)
+        {
+            return 5;
+        }
+        else
+        {
+            return 10;
+        }
+    }
+   
 ?>
