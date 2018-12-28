@@ -1,6 +1,6 @@
 <?php 
    require_once __DIR__. "/../../autoload/autoload.php";
-   require_once __DIR__. "/../../layout/header.php";
+   require_once __DIR__. "/../../layout/ADMINHEADER.php";
    
    if(isset($_GET['page']))
    {
@@ -114,4 +114,3 @@
       </div>
    </div>
 </section>
-<?php require_once __DIR__. "/../../layout/footer.php";?>

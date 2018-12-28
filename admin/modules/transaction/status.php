@@ -21,6 +21,7 @@
 	    $_SESSION['success']="Cập nhật thành công";
 	    $sql = " SELECT product_id,qty FROM orders WHERE transaction_id = $id ";
 	    $Order = $db->fetchsql($sql);
+	    _debug($Order);
 	    foreach ($orders as $item) 
 	    {
 	    	$idproduct = intval($item['product_id']);

@@ -1549,18 +1549,18 @@ body {
 
 #exTab1 .tab-content {
   color : black;
-  background-color: #428bca;
+  background-color: white;
   padding : 5px 15px;
 }
 
 #exTab2 h3 {
   color : black;
-  background-color: #428bca;
+  background-color: white;
   padding : 5px 15px;
 }
 #exTab2 th {
   color : black;
-  background-color: #428bca;
+  background-color: white;
   padding : 5px 15px;
 }
 
@@ -1578,7 +1578,7 @@ body {
 
 #exTab3 .tab-content {
   color : white;
-  background-color: #428bca;
+  background-color: white;
   padding : 5px 15px;
 }
 .text-danger

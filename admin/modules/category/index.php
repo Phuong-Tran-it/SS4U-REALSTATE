@@ -1,6 +1,6 @@
 <?php 
    require_once __DIR__. "/../../autoload/autoload.php";
-   require_once __DIR__. "/../../layout/header.php";
+   require_once __DIR__. "/../../layout/ADMINHEADER.php";
    $category =$db->fetchAll("category");
    ?>
            <title>Danh Mục Sản Phẩm</title>
@@ -88,4 +88,3 @@
       </div>
    </div>
 </section>
-   <?php require_once __DIR__. "/../../layout/footer.php";?>

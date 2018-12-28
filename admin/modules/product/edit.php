@@ -125,7 +125,7 @@
       }
    }
    ?>
-<?php require_once __DIR__. "/../../layout/header.php";?>
+<?php require_once __DIR__. "/../../layout/ADMINHEADER.php";?>
 <section class="gallery-block">
    <div class="container">
    <div class="col-lg-12">
@@ -362,4 +362,3 @@
    </div>
 </section>
 <!--end-->
-<?php require_once __DIR__. "/../../layout/footer.php";?>

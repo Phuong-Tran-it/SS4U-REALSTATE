@@ -23,33 +23,33 @@
                             <h3 class="box-title"><i class="fa fa-list"></i>  Danh mục</h3>
                             <ul>
                                 <li>
-                                    <a href="">Máy tính  <span class="badge pull-right">14</span></a>
+                                    <a href="">  <span class="badge pull-right"></span></a>
                                     <ul>
-                                        <li><a href=""> Sonny 1</a></li>
-                                        <li><a href=""> Sonny 2</a></li>
-                                        <li><a href=""> Sonny 3</a></li>
-                                        <li><a href=""> Sonny 4</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="">Máy giặt  <span class="badge pull-right">14</span></a>
+                                    <a href="">  <span class="badge pull-right"></span></a>
                                     <ul>
-                                        <li><a href=""> Sonny 1</a></li>
-                                        <li><a href=""> Sonny 2</a></li>
-                                        <li><a href=""> Sonny 3</a></li>
-                                        <li><a href=""> Sonny 4</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="">Đồ điện  <span class="badge pull-right">14</span></a>
+                                    <a href=""> <span class="badge pull-right"></span></a>
                                 </li>
                                 <li>
-                                    <a href=""> Thiết bị văn phòng  <span class="badge pull-right">14</span> </a>
+                                    <a href=""> Thiết bị văn phòng  <span class="badge pull-right"></span> </a>
                                     <ul>
-                                        <li><a href=""> Sonny 1</a></li>
-                                        <li><a href=""> Sonny 2</a></li>
-                                        <li><a href=""> Sonny 3</a></li>
-                                        <li><a href=""> Sonny 4</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -57,7 +57,7 @@
 
                         <div class="box-left box-menu">
                             <h3 class="box-title"><i class="fa fa-warning"></i>  Sản phẩm mới </h3>
-                           <!--  <marquee direction="down" onmouseover="this.stop()" onmouseout="this.start()"  > -->
+                           <!--  <marquee direction="down" onmouseover="this.stop()" onmouseout="this.start()"  >
                             <ul>
                                 
                                 <li class="clearfix">
@@ -115,7 +115,7 @@
 
                         <div class="box-left box-menu">
                             <h3 class="box-title"><i class="fa fa-warning"></i>  Sản phẩm mới </h3>
-                           <!--  <marquee direction="down" onmouseover="this.stop()" onmouseout="this.start()"  > -->
+                           <!--  <marquee direction="down" onmouseover="this.stop()" onmouseout="this.start()"  > 
                             <ul>
                                 
                                 <li class="clearfix">
@@ -192,7 +192,7 @@
                             <div class="col-md-6 bor" style="margin-top: 20px;padding: 30px;">
                                <ul id="right">
                                     <li><h3> <?php echo $product['HOUSE_DETAIL_CODE'] ?> </h3></li>
-                                    <li><p><strong><b class="price"><?php echo $product['price'] ?>đ</b></strong></li>
+                                    <li><p><strong><b class="price"><?php echo formatPrice  ($product['price']) ?>đ</b></strong></li>
                                     <li><a href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $product['id']?>" class="btn btn-primary"> <i class="fa fa-shopping-basket"></i>Chọn</a></li>
                                </ul>
                             </div>
@@ -212,25 +212,27 @@
                                         <h3>Nội dung</h3>
 <div class="col-wrap">
     <div class="col">
-        <p>Mã Block</p>
+        <p>Mã Block: <?php echo $product['HOUSE_DETAIL_CODE'] ?></p>
+        <p>Mã Tòa Nhà: <?php echo $product['BUILDING_ID'] ?></p>
+        <p>Số Tầng: <?php echo $product['FLOOR_ID'] ?></p>
     </div>
 
     <div class="col">
-        <p>Mã Tòa Nhà</p>
-        <p>Số Tầng</p>
-        <p>Số Nhà</p>
-        <p>Hello World!</p>
+        
+        
+        <p>Hướng: <?php echo $product['HOUSE_VIEW'] ?></p>
+        <p>Diện Tích Sàn: <?php echo $product['DT_LUNG'] ?></p>
     </div>
 
     <div class="col">
-        <p>Some other text..</p>
-        <p>Some other text..</p>
+        <p>Số Phòng: <?php echo $product['SL_PHONG'] ?></p>
+        <p>Số WC: <?php echo $product['SL_WC'] ?></p>
     </div>
 </div>
                                     </div>
                                     <div id="menu1" class="tab-pane fade">
-                                        <h3> Thông tin khác </h3>
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <h3> Mô Tả </h3>
+                                        <p><?php echo $product['content'] ?></p>
                                     </div>
                                     <div id="menu2" class="tab-pane fade">
                                         <h3>Menu 2</h3>

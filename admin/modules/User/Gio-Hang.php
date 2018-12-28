@@ -37,6 +37,7 @@
                      </tr>
                   <tbody>
                      <?php $stt=1; foreach ($_SESSION['cart'] as $key =>$val): ?>
+
                      <tr>
                         <td><?php echo $stt ?></td>
                         <td><?php echo $val['HOUSE_DETAIL_CODE'] ?></td>
@@ -54,12 +55,14 @@
                               ?>
                         </td>
                         <td>
-                           <a class="btn btn-xs btn-danger"href=""><i class="fa fa-times">Xóa</i></a>
+                           <a class="btn btn-xs btn-danger"href="remove.php?key=<?php echo $key ?>"><i class="fa fa-times">Xóa</i></a>
                            <a class="btn btn-xs btn-info"href=""><i class="fa fa-refresh">Cập Nhật</i></a>
                         </td>
                      </tr>
                      <?php $sum += $val['price'] * $val['qty']; $_SESSION['tongtien']= $sum; 
+                        
                         ?>
+
                      <?php $stt++; endforeach ?>
                   </tbody>
                   </thead>
