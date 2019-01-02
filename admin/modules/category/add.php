@@ -41,6 +41,7 @@
 	}
 ?>
 <?php require_once __DIR__. "/../../layout/ADMINHEADER.php";?>
+<title>Thêm Chủ Dự Án</title>
 <section class="gallery-block">
    <div class="container">
    <div class="col-lg-12">

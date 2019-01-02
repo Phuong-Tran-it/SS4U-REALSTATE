@@ -14,6 +14,7 @@
       <!-- Custom styles for this template -->
       <link href="<?php echo base_url() ?>public/admin/css/style.css" rel="stylesheet">
       <link href="<?php echo base_url() ?>public/admin/css/responsive.css" rel="stylesheet">
+      
       <script src="<?php echo base_url() ?>public/admin/js/jquery.min.js" type="text/javascript"></script>
       <script src="<?php echo base_url() ?>public/admin/js/bootstrap.min.js" type="text/javascript"></script>
       <script src="<?php echo base_url() ?>public/admin/js/scrolling-nav.js" type="text/javascript"></script>

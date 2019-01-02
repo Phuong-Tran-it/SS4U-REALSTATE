@@ -331,7 +331,7 @@
                      <h3 class="quick-view">50000$ - 80000$</h3>
                      <div class="image scrollReveal sr-bottom sr-delay-1">
                         <a>
-                        <img class="img-responsive" src="images/Home/landmark.png" style="width:465px; height: 301px">
+                        <img class="img-responsive" src="public/admin/images/Home/landmark.png" style="width:465px; height: 301px">
                         </a>
                      </div>
                      <div class="property-info scrollReveal sr-bottom sr-delay-2">
@@ -346,7 +346,7 @@
                      <h3 class="quick-view">40000$ /60000$</h3>
                      <div class="image scrollReveal sr-bottom sr-delay-3">
                         <a>
-                        <img class="img-responsive" src="images/Home/kingdom.png"style="width:465px; height: 301px">
+                        <img class="img-responsive" src="public/admin/images/Home/kingdom.png"style="width:465px; height: 301px">
                         </a>
                      </div>
                      <div class="property-info scrollReveal sr-bottom sr-delay-4">
@@ -361,7 +361,7 @@
                      <h3 class="quick-view">60000$ - 90000$</h3>
                      <div class="image scrollReveal sr-bottom sr-delay-1">
                         <a>
-                        <img class="img-responsive" src="images/Home/dragon.ong.png"style="width:465px; height: 301px">
+                        <img class="img-responsive" src="public/admin/images/Home/dragon.ong.png"style="width:465px; height: 301px">
                         </a>
                      </div>
                      <div class="property-info scrollReveal sr-bottom sr-delay-2">

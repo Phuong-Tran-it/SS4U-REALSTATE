@@ -46,9 +46,6 @@
       <!--thông báo-->
       <?php require_once __DIR__. "/../../../partials/notification.php";?>
       <!--end-->
-      <div class="pull-right">
-         <a href="add.php" class="btn btn-info">Thêm Mới</a>
-      </div>
       <div class="col-md-12">
          <div class="row">
             <div class="table-responsive" >

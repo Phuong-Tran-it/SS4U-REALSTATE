@@ -52,8 +52,8 @@
                            <li><a href="home.php" class="page-scroll">Trang Chủ</a></li>
                            <li><a href="investor.php" class="page-scroll">Chủ Đầu Tư</a></li>
                            <li class="active"><a class="page-scroll">Nhà Đất Bán</a></li>
-                           <li> <a href="blog.php" class="page-scroll">        </a>        </li>
-                           <li> <a href="contact.php" class="page-scroll">     </a>     </li>
+                           <li> <a href="#" class="page-scroll">        </a>        </li>
+                           <li> <a href="#" class="page-scroll">     </a>     </li>
                            <?php require_once __DIR__. "/admin/autoload/autoload.php"; ?>
                            <?php if(isset($_SESSION['name_user'])): ?>
                            <li >
@@ -103,7 +103,7 @@
                <div class="tab-pane active" id="1a">
                   <div class="row">
                      <?php foreach ($productnew as $item): ?>
-                     <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
+                     <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal ">
                         <div class="team_pos">
                            <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
                            <div class="team_info">
@@ -127,7 +127,7 @@
                         $productnew2= $db->fetchsql($sqlHomenew2);
                         ?>
                      <?php foreach ($productnew2 as $item2): ?>
-                     <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
+                     <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal ">
                         <div class="team_pos">
                            <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item2['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
                            <div class="team_info">
@@ -150,7 +150,7 @@
                      <?php $new3="SELECT * FROM product WHERE kind =3";
                         $productnew3= $db->fetchsql($new3);  ?>
                      <?php foreach ($productnew3 as $item): ?>
-                     <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
+                     <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal ">
                         <div class="team_pos">
                            <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
                            <div class="team_info">
@@ -173,7 +173,7 @@
                      <?php $new4="SELECT * FROM product WHERE kind =4";
                         $productnew4= $db->fetchsql($new4);  ?>
                      <?php foreach ($productnew4 as $item): ?>
-                     <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
+                     <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal ">
                         <div class="team_pos">
                            <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
                            <div class="team_info">
@@ -196,7 +196,7 @@
                      <?php $new5="SELECT * FROM product WHERE kind =5";
                         $productnew5= $db->fetchsql($new5);  ?>
                      <?php foreach ($productnew5 as $item): ?>
-                     <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
+                     <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal ">
                         <div class="team_pos">
                            <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
                            <div class="team_info">

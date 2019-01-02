@@ -1,11 +1,14 @@
 <?php 
    require_once __DIR__. "/admin/autoload/autoload.php";
+   //login bằng google +
+   require_once __DIR__. "/admin/modules/User/config.php";
+
    $data =
    [
          'email' => postInput("email"),
          'password' => postInput("password")
    ];
-   
+   $loginURL = $gClient->createAuthUrl();
    $error = [];
    if ($_SERVER["REQUEST_METHOD"]=="POST" && $json['success'] =1 )
       {
@@ -89,12 +92,20 @@
                      </label>
                   </div>
                </div>
+
                <div style="margin-top:10px" class="form-group">
                   <!-- Button -->
                   <div class="col-sm-12 controls">
-                     <button type="submit" class="btn btn-primary" id="loginbox" name="submit">Đăng Nhập</button>
+                     <button type="submit" class="btn btn-success" id="loginbox" name="submit">Đăng Nhập</button>
+                     <a class="btn btn-danger">
+    <span type="button" value="login with Google" class="fa fa-google" onclick="window.location='<?php echo $loginURL ?>';"> Google  </span>
+  </a>
+  <a class="btn btn-primary">
+    <span type="button" value="login with facebook" class="fa fa-facebook"> facebook  </span>
+  </a>
                   </div>
                </div>
+               
                <div class="form-group">
                   <div class="col-md-12 control">
                      <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >

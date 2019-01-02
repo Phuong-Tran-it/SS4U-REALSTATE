@@ -75,6 +75,7 @@
    }
    ?>
 <?php require_once __DIR__. "/../../layout/ADMINHEADER.php";?>
+<title>Thêm QTV</title>
 <section class="gallery-block">
    <div class="container">
    <div class="col-lg-12">

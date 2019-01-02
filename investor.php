@@ -38,7 +38,7 @@
                         <span class="icon-bar"></span>
                         </button>
                         <div class="logo">
-                           <a href="index.html"><img src="public/admin/images/logoCTY.png" alt="logo"></a>
+                           <a href="home.php"><img src="public/admin/images/logoCTY.png" alt="logo"></a>
                         </div>
                      </div>
                   </div>

@@ -1,6 +1,7 @@
 
 
  <?php    require_once __DIR__. "/admin/layout/header.php";?>
+ <link rel="stylesheet" href="">
 <br><br><br>
 <div class="container">
    <?php 
@@ -17,15 +18,20 @@ $data=
            "password" => md5(postInput('password')),
               "address" => postInput('address')
       ];
-      if ($_SERVER["REQUEST_METHOD"]=="POST")
+      if ($_SERVER["REQUEST_METHOD"]=="POST" && $json['success'] =1)
       {
-
+         $responseKey = $_POST['g-recaptcha-response'];
+         $userIP = $_SERVER['REMOTE_ADDR'];
+         $list=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LfgmIMUAAAAAF7NNAb7bRHYgUZUxl-7ExwTSTbP&response=$responseKey&remoteip=$userIP");
+         $json=json_decode($list,true);
          //tiến hành validate & đăng ký
          if(postInput('name')=='')
       {
          $error['name']="Mời bạn nhập họ và tên";
       }
-      
+      if($json['success'] !=1){
+         $error['capcha']="Nhập Capcha";
+      }
       if(postInput('address')=='')
       {
          $error['address']="Mời bạn nhập địa chỉ";
@@ -77,6 +83,7 @@ $data=
          }
          }
       ?>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
    <div style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
       <div class="panel panel-info">
          <div class="panel-heading">
@@ -145,17 +152,33 @@ $data=
                   </div>
                </div>
                <div class="form-group">
+               <div class="g-recaptcha" data-sitekey="6LfgmIMUAAAAAIRFgaU0huIh75-909XoTbS0hYtk"></div>
+                  <?php if (isset($error['capcha'])):?>
+                  <p class="text-danger"> <?php echo $error['capcha'] ?></p>
+                  <?php endif?>
+                  </div>
+               <div class="form-group">
                   <!-- Button -->                                        
                   <div class="col-md-offset-3 col-md-9">
                      <button id="signupbox" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> Đăng Ký</button>
                      <span style="margin-left:8px;">hoặc</span>  
                   </div>
                </div>
-               <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
-                  <div class="col-md-offset-3 col-md-9">
-                     <button type="button" class="btn btn-primary"><i class="icon-facebook"></i>Facebook</button>
+               <div class="form-group">
+                  <div class="col-md-offset-2 col-md-9">
+                       <a class="btn btn-danger">
+    <span type="button" value="login with Google" class="fa fa-google"> Đăng Ký Bằng Tài Khoản Google  </span>
+  </a>
                   </div>
+                  <br>
+                  
                </div>
+               <div class="form-group">
+               <div class="col-md-offset-2 col-md-9">
+                       <a class="btn btn-primary">
+    <span class="fa fa-facebook"> Đăng Ký Bằng Tài Khoản Facebook</span>
+  </a>
+                  </div></div>
             </form>
          </div>
       </div>

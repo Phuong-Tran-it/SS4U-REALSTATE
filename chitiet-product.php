@@ -3,6 +3,8 @@
 <?php 
     $id = intval(getInput('id'));
     $product = $db->fetchID("product",$id);
+    $ID = $product['category_id'];
+    $category = $db->fetchID("category",$ID);
  ?>
 <body>
         <div id="wrapper">
@@ -192,6 +194,7 @@
                             <div class="col-md-6 bor" style="margin-top: 20px;padding: 30px;">
                                <ul id="right">
                                     <li><h3> <?php echo $product['HOUSE_DETAIL_CODE'] ?> </h3></li>
+                                    <li><h4>Thuộc Dự Án: <?php echo $category['name'] ?></h4></li>
                                     <li><p><strong><b class="price"><?php echo formatPrice  ($product['price']) ?>đ</b></strong></li>
                                     <li><a href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $product['id']?>" class="btn btn-primary"> <i class="fa fa-shopping-basket"></i>Chọn</a></li>
                                </ul>
