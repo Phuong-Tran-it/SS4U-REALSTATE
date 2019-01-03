@@ -20,5 +20,5 @@
     {
     	$_SESSION['cart'][$id]['qty'] +=1;
     }
-    echo "<script>alert('Thêm Thành Công!');location.href='Gio-Hang.php'</script>";
+    echo "<script>location.href='Gio-Hang.php'</script>";
    ?>

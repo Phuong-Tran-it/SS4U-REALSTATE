@@ -20,7 +20,8 @@
 	$_SESSION['picture'] = $userData['picture'];
 	$_SESSION['familyName'] = $userData['familyName'];
 	$_SESSION['givenName'] = $userData['givenName'];
+	$_SESSION['phone'] = $userData['phone'];
 
-	header('Location: index.php');
+	header('Location: LoginGoogle.php');
 	exit();
 ?>

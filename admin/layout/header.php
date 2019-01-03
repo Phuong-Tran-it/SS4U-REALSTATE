@@ -31,7 +31,7 @@
          <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                <div class="row">
-                  <div class="col-md-3 col-sm-3">
+                  <div class="col-md-2 col-sm-3">
                      <div class="navbar-header page-scroll">
                         <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
                         <span class="sr-only">Toggle navigation</span>
@@ -40,7 +40,7 @@
                         <span class="icon-bar"></span>
                         </button>
                         <div class="logo">
-                           <a href="/SS4UREALSTATE/home.php"><img src="/SS4UREALSTATE/public/admin/images/logoCTY.png" alt="logo"></a>
+                           <a href="/SS4UREALSTATE/home.php"><img src="/SS4UREALSTATE/public/admin/images/logo.png" alt="logo"></a>
                         </div>
                      </div>
                   </div>

@@ -1,10 +1,10 @@
 <?php require_once __DIR__. "/admin/autoload/autoload.php";?>
 <?php 
       //Mới Nhất
-      $sqlHomenew= "SELECT * FROM product WHERE 1 ORDER BY CREATION_DATE DESC LIMIT 10"; 
+      $sqlHomenew= "SELECT * FROM product WHERE 1 ORDER BY CREATION_DATE DESC LIMIT 6"; 
       $productnew= $db->fetchsql($sqlHomenew);
       //xem nhiều
-      $sqlHomeView= "SELECT * FROM product WHERE 1 ORDER BY view DESC LIMIT 10"; 
+      $sqlHomeView= "SELECT * FROM product WHERE 1 ORDER BY view DESC LIMIT 6";
       $ProductView= $db->fetchsql($sqlHomeView);
       $data= [];
 ?>
@@ -45,12 +45,12 @@
          <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                <div class="row">
-                  <div class="col-md-3 col-sm-3">
+                  <div class="col-md-2 col-sm-3">
                      <div class="navbar-header page-scroll">
                         <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
                         </button>
                         <div class="logo">
-                           <a href="home.php"><img src="public/admin/images/logoCTY.png" alt="logo"></a>
+                           <a href="home.php"><img src="public/admin/images/logo.png" alt="logo"></a>
                         </div>
                      </div>
                   </div>
@@ -415,7 +415,7 @@
             </div>
             <div class="staff-team">
                <div class="row">
-                <?php  $sqlHomeSELL= "SELECT * FROM product WHERE 1 ORDER BY pay DESC LIMIT 10"; 
+                <?php  $sqlHomeSELL= "SELECT * FROM product WHERE 1 ORDER BY pay DESC LIMIT 6"; 
       $ProductSELL= $db->fetchsql($sqlHomeSELL);?>
                  <?php foreach ($ProductSELL as $item): ?>
                   <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">

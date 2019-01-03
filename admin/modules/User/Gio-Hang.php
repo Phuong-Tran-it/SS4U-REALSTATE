@@ -6,6 +6,7 @@
    		echo "<script>alert('Không có lựa chọn nào !');location.href='/../../../SS4UREALSTATE/home.php'</script>";
    }
    ?>
+   <title>Đơn Hàng</title>
 <br><br><br><br><br><br>
 <div class="container">
    <h1></h1>

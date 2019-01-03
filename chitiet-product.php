@@ -46,7 +46,7 @@
                                     <a href=""> <span class="badge pull-right"></span></a>
                                 </li>
                                 <li>
-                                    <a href=""> Thiết bị văn phòng  <span class="badge pull-right"></span> </a>
+                                    <a href="">   <span class="badge pull-right"></span> </a>
                                     <ul>
                                         <li><a href=""></a></li>
                                         <li><a href=""></a></li>
@@ -207,8 +207,8 @@
                                 <ul class="nav nav-tabs">
                                     <li class="active"><a data-toggle="tab" href="#home">Mô tả sản phẩm </a></li>
                                     <li><a data-toggle="tab" href="#menu1">Thông tin khác </a></li>
-                                    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-                                    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+                                    <li><a data-toggle="tab" href="#menu2"></a></li>
+                                    <li><a data-toggle="tab" href="#menu3"></a></li>
                                 </ul>
                                 <div class="tab-content">
                                     <div id="home" class="tab-pane fade in active">

@@ -1,8 +1,16 @@
 <?php 
    require_once __DIR__. "/admin/autoload/autoload.php";
    //login bằng google +
-   require_once __DIR__. "/admin/modules/User/config.php";
+   require_once __DIR__. "/admin/modules/User/loginGoogle/config.php";
+   require_once __DIR__. "/admin/modules/User/loginFacebook/config.php";
+   /*if (isset($_SESSION['access_token'])) {
+      header('Location: home.php');
+      exit();
+   }*/
 
+   $redirectURL = "http://localhost/FacebookLogin/fb-callback.php";
+   $permissions = ['email'];
+   $loginURL1 = $helper->getLoginUrl($redirectURL, $permissions);
    $data =
    [
          'email' => postInput("email"),
@@ -101,7 +109,7 @@
     <span type="button" value="login with Google" class="fa fa-google" onclick="window.location='<?php echo $loginURL ?>';"> Google  </span>
   </a>
   <a class="btn btn-primary">
-    <span type="button" value="login with facebook" class="fa fa-facebook"> facebook  </span>
+    <span type="button" value="login with facebook" class="fa fa-facebook"onclick="window.location='<?php echo $loginURL1 ?>';"> facebook  </span>
   </a>
                   </div>
                </div>
