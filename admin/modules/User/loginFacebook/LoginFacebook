@@ -1,16 +1,15 @@
 <?php
 	require_once __DIR__. "/../../../autoload/autoload.php";
-	if (!isset($_SESSION['access_token'])) {
+	if (!isset($_SESSION['access_token1'])) {
 		echo "<script>alert('Vui lòng trở lại màn hình đăng nhập!');location.href='/../../../../SS4UREALSTATE/dang-nhap.php'</script>";
 		exit();
 		
 	}
 	$data=
       [		
-  			"name" => $_SESSION['givenName'],
-           "email" => $_SESSION['email']
+  			"name" => $_SESSION['userData']['name'],
+           "email" => $_SESSION['userData']['email']
       ];
-
       $is_check = $db->fetchOne("users"," email = '".$data['email']."' ");
          if($is_check == NULL)
          {

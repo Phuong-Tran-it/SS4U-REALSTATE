@@ -5,12 +5,13 @@
 		exit();
 		
 	}
+  _debug($_SESSION['name']);die();
 	$data=
       [		
   			"name" => $_SESSION['givenName'],
            "email" => $_SESSION['email']
       ];
-
+      /*
       $is_check = $db->fetchOne("users"," email = '".$data['email']."' ");
          if($is_check == NULL)
          {
@@ -19,5 +20,5 @@
          $_SESSION['name_user'] = $is_check['name'];
         	$_SESSION['name_id'] = $is_check['id'];
 
-	echo "<script>alert('Đăng Nhập Thành Công!');location.href='/../../../SS4UREALSTATE/home.php'</script>";
+	echo "<script>alert('Đăng Nhập Thành Công!');location.href='/../../../SS4UREALSTATE/home.php'</script>";*/
 ?>

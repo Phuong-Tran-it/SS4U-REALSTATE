@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" href="/SS4UREALSTATE/public/admin/images/REALSTATE.png"/>
+      <link rel="icon" href="/SS4UREALSTATE/public/admin/images/favicon.ico"/>
       <!-- Bootstrap core CSS -->
       <link href="<?php echo base_url() ?>public/admin/css/scrolling-nav.css" rel="stylesheet" media="all">
       <link href="<?php echo base_url() ?>public/admin/css/bootstrap.min.css" rel="stylesheet">
@@ -44,7 +44,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-8 col-sm-8 remove-left">
+                  <div class="col-md-6">
                      <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="nav navbar-nav">
                            <li class="hidden active">
@@ -53,25 +53,30 @@
                            <li ><a href="/SS4UREALSTATE/home.php" class="page-scroll">Trang Chủ</a></li>
                            <li><a href="/SS4UREALSTATE/investor.php" class="page-scroll">Giới Thiệu</a></li>
                            <li><a href="/SS4UREALSTATE/homesell.php" class="page-scroll">Đại Diện</a></li>
-                           <li> <a href="blog.php" class="page-scroll">        </a>        </li>
-                           <li> <a href="contact.php" class="page-scroll">     </a>     </li>
-                           <?php if(isset($_SESSION['name_user'])): ?>
-                           <li >
-                              <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
-                           </li>
-                           <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-shopping-cart"></i></a></li>
-                           <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
-                           <?php else :?>
-                            <li>
-                              <a href="/SS4UREALSTATE/dang-nhap.php"><i class="fa fa-unlock"></i>&nbsp; Đăng Nhập</a>
-                           </li>
-                           <?php endif;?>
+                           
                            
                         </ul>
                         
                            
                      </div>
                   </div>
+                  <div class="col-md-4 col-sm-1 remove-right">
+                     <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                          <?php if(isset($_SESSION['name_user'])): ?> 
+                           <li >
+                              <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
+                           </li>
+
+                           <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-shopping-cart"></i></a></li>
+                           <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
+
+                           <?php else :?>
+                           <li>
+                              <a href="/SS4UREALSTATE/dang-nhap.php"><i class="fa fa-unlock"></i>&nbsp; Đăng Nhập</a>
+                           </li>
+                           <?php endif;?>
+                         </ul></div></div>
                   <!-- /navbar-collapse 
                      <div class="col-md-2 col-sm-1">
                          <a class="search" id="searchtoggl"><i class="fa fa-search"></i></a>

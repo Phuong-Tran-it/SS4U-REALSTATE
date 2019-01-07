@@ -3,14 +3,21 @@
    //login bằng google +
    require_once __DIR__. "/admin/modules/User/loginGoogle/config.php";
    require_once __DIR__. "/admin/modules/User/loginFacebook/config.php";
-   /*if (isset($_SESSION['access_token'])) {
+   if (isset($_SESSION['access_token'])) 
+   {
       header('Location: home.php');
       exit();
-   }*/
-
-   $redirectURL = "http://localhost/FacebookLogin/fb-callback.php";
+   }
+   if (isset($_SESSION['access_token1'])) 
+   {
+      header('Location: home.php');
+      exit();
+   }
+   //login facebook
+   $redirectURL = "http://localhost:8888/SS4UREALSTATE/admin/modules/User/loginFacebook/fb-callback.php";
    $permissions = ['email'];
    $loginURL1 = $helper->getLoginUrl($redirectURL, $permissions);
+   //end
    $data =
    [
          'email' => postInput("email"),
@@ -20,11 +27,12 @@
    $error = [];
    if ($_SERVER["REQUEST_METHOD"]=="POST" && $json['success'] =1 )
       {
+         //google re_capcha V2
          $responseKey = $_POST['g-recaptcha-response'];
          $userIP = $_SERVER['REMOTE_ADDR'];
          $list=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LfgmIMUAAAAAF7NNAb7bRHYgUZUxl-7ExwTSTbP&response=$responseKey&remoteip=$userIP");
          $json=json_decode($list,true);
-   
+         //end
          if(postInput('email')=='')
       {
          $error['email']="Nhập email";
@@ -56,6 +64,7 @@
       }
    ?>
 <?php    require_once __DIR__. "/admin/layout/header.php";?>
+<title>Đăng Nhập</title>>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <br><br><br>
 <div class="container">

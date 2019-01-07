@@ -6,6 +6,7 @@
     $ID = $product['category_id'];
     $category = $db->fetchID("category",$ID);
  ?>
+ <title>Chi Tiết Sản Phẩm</title>
 <body>
         <div id="wrapper">
             <!---->

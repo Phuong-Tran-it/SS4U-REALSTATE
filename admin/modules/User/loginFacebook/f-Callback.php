@@ -1,11 +1,12 @@
 <?php
 	require_once "config.php";
+	require_once __DIR__. "/../../../autoload/autoload.php";
 	try {
 		$accessToken = $helper->getAccessToken();
-	} catch (\Facebook\Exceptions\FacebookResponseException $e) {
+	} catch (\..\..\Facebook\Exceptions\FacebookResponseException $e) {
 		echo "Response Exception: " . $e->getMessage();
 		exit();
-	} catch (\Facebook\Exceptions\FacebookSDKException $e) {
+	} catch (\..\..\Facebook\Exceptions\FacebookSDKException $e) {
 		echo "SDK Exception: " . $e->getMessage();
 		exit();
 	}
@@ -19,10 +20,10 @@
 	if (!$accessToken->isLongLived())
 		$accessToken = $oAuth2Client->getLongLivedAccessToken($accessToken);
 
-	$response = $FB->get("/me?fields=id, first_name, last_name, email, picture.type(large)", $accessToken);
+	$response = $FB->get("/me?fields=id,name,email", $accessToken);
 	$userData = $response->getGraphNode()->asArray();
 	$_SESSION['userData'] = $userData;
-	$_SESSION['access_token'] = (string) $accessToken;
-	header('Location: loginFacebook.php');
+	$_SESSION['access_token1'] = (string) $accessToken;
+	header('Location: LoginFacebook.php');
 	exit();
 ?>

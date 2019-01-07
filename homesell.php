@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" href="public/admin/images/REALSTATE.png"/>
+      <link rel="icon" href="public/admin/images/favicon.ico"/>
       <title>Nhà Đất Bán</title>
       <!-- Bootstrap core CSS -->
       <link href="public/admin/css/scrolling-nav.css" rel="stylesheet" media="all">
@@ -43,7 +43,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-9 col-sm-8 remove-left">
+                  <div class="col-md-6">
                      <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="nav navbar-nav">
                            <li class="hidden active">
@@ -52,23 +52,28 @@
                            <li><a href="home.php" class="page-scroll">Trang Chủ</a></li>
                            <li><a href="investor.php" class="page-scroll">Chủ Đầu Tư</a></li>
                            <li class="active"><a class="page-scroll">Nhà Đất Bán</a></li>
-                           <li> <a href="#" class="page-scroll">        </a>        </li>
-                           <li> <a href="#" class="page-scroll">     </a>     </li>
                            <?php require_once __DIR__. "/admin/autoload/autoload.php"; ?>
-                           <?php if(isset($_SESSION['name_user'])): ?>
+                           
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-1">
+                     <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                          <?php if(isset($_SESSION['name_user'])): ?> 
                            <li >
                               <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
+
                            <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-shopping-cart"></i></a></li>
                            <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
+
                            <?php else :?>
                            <li>
                               <a href="/SS4UREALSTATE/dang-nhap.php"><i class="fa fa-unlock"></i>&nbsp; Đăng Nhập</a>
                            </li>
                            <?php endif;?>
-                        </ul>
-                     </div>
-                  </div>
+                         </ul></div></div>
                   <!-- /navbar-collapse -->
                </div>
             </div>

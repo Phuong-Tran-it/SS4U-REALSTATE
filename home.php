@@ -15,7 +15,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" href="public/admin/images/REALSTATE.png"/>
+      <link rel="icon" href="public/admin/images/favicon.ico"/>
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -54,7 +54,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-9 col-sm-8 remove-left">
+                  <div class="col-md-6 ">
                      <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="nav navbar-nav">
                            <li class="hidden active">
@@ -63,12 +63,23 @@
                            <li class="active"><a href="home.php" class="page-scroll">Trang Chủ</a></li>
                            <li><a href="investor.php" class="page-scroll">Chủ Đầu Tư</a></li>
                            <li><a href="homesell.php" class="page-scroll">Nhà Đất Bán</a></li>
-                           <li> <a href="blog.php" class="page-scroll">        </a>        </li>
-                           <li> <a href="contact.php" class="page-scroll">     </a>     </li>
-                           
-                           <?php if(isset($_SESSION['name_user'])): ?> 
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-1">
+                     <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                          <?php if(isset($_SESSION['name_user'])): ?> 
                            <li >
-                              <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
+                            <div class="dropdown">
+
+                              <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>" class="dropbtn"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
+                              <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+                            </div>
                            </li>
 
                            <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-shopping-cart"></i></a></li>
@@ -79,10 +90,7 @@
                               <a href="/SS4UREALSTATE/dang-nhap.php"><i class="fa fa-unlock"></i>&nbsp; Đăng Nhập</a>
                            </li>
                            <?php endif;?>
-
-                        </ul>
-                     </div>
-                  </div>
+                         </ul></div></div>
                   <!-- /navbar-collapse 
                      <div class="col-md-2 col-sm-1">
                          <a class="search" id="searchtoggl"><i class="fa fa-search"></i></a>
@@ -99,7 +107,6 @@
             <!-- /.container -->
          </nav>
       </header>
-
       <!--end-->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
          <!-- Indicators -->
@@ -165,29 +172,7 @@
       <!--Thông Tin Liên Lạc-->
       <?php require_once __DIR__. "/layouts/lienlac.php";?>
       <!--end-->
-      <!--adertise block
-         <section class="advertise-block">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                         <div class="advertise-block-one scrollReveal sr-bottom sr-delay-1">
-                             <h4>sell my home</h4>
-                             <p>Lorem Ipsum is simply dummy text of the prin ting and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and nutypodf ty</p>
-                         </div>
-                     </div>
-                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                         <div class="advertise-block-two scrollReveal sr-bottom sr-delay-2">
-                             <h4>how can we help you</h4>
-                             <p>Lorem Ipsum is simply dummy text of the prin ting and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and nutypodf ty</p>
-                         </div>
-         
-                     </div>
-                 </div>
-             </div>
-             <div class="clearfix"></div> 
-         </section>
-         --->
-      <!--end--->
+      
       <!--cây tìm kiếm-->
       <?php require_once __DIR__. "/admin/function/SearchTree.php";?>
       <!--end-->
@@ -224,101 +209,7 @@
          <div class="clearfix"></div>
       </section>
       <!---end--->
-      <!--gallery block
-         <section class="gallery-block">
-             <div class="container">
-                 <div class="text-head text-center">
-                     <h1>Sản Phẩm Bán Chạy Nhất</h1>
-                 </div>
-                 <div class="staff-team">
-                     <div class="row">
-                 <ul class="bxslider">
-                     <div class="team_pos">
-                                 <li><img src="public/admin/images/Home/Image6.png"/></li>
-                                 <div class="team_info">
-                                     <div class="social-icons-effect">
-                                         <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
-                                         <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
-                                         <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-google"></i></a>
-                                     </div>
-                                 </div>
-                             </div>
-                 </ul>
-             </div></div>
-             </div>
-         </section>
-         <!---end--->
-      <!--gallery block
-         <section class="category-block">
-             <div class="container">
-                 <div class="text-head text-center">
-                     <h1>Thể Loại</h1>
-                 </div>
-                 <div class="row">
-                     <div class="col-md-4 col-sm-6 col-xs-12 grid slideanim">
-                         <figure class="effect-selena scrollReveal sr-scaleDown sr-delay-1">
-                             <img alt="img10" src="public/admin/images/Home/dep.png" style="width:365px; height: 300px">
-                             <figcaption>
-                                 <h2>Lorem <span>Ipsum</span></h2>
-                                 <p>[42 properties]</p>
-                                 <a href="#">View more</a>
-                             </figcaption>
-                         </figure>
-                     </div>
-                     <div class="col-md-4 col-sm-6 col-xs-12 grid slideanim">
-                         <figure class="effect-selena scrollReveal sr-scaleDown sr-delay-2">
-                             <img alt="img10" src="public/admin/images/Home/dep.png" style="width:365px; height: 300px">
-                             <figcaption>
-                                 <h2>Lorem <span>Ipsum</span></h2>
-                                 <p>[22 properties]</p>
-                                 <a href="#">View more</a>
-                             </figcaption>
-                         </figure>
-                     </div>
-                     <div class="col-md-4 col-sm-6 col-xs-12 grid slideanim">
-                         <figure class="effect-selena scrollReveal sr-scaleDown sr-delay-3">
-                             <img alt="img10" src="public/admin/images/Home/dep.png" style="width:365px; height: 300px">
-                             <figcaption>
-                                 <h2>Lorem <span>Ipsum</span></h2>
-                                 <p>[12 properties]</p>
-                                 <a href="#">View more</a>
-                             </figcaption>
-                         </figure>
-                     </div>
-                     <div class="col-md-4 col-sm-6 col-xs-12 grid slideanim">
-                         <figure class="effect-selena scrollReveal sr-scaleUp sr-delay-1">
-                             <img alt="img10" src="public/admin/images/Home/dep.png" style="width:365px; height: 300px">
-                             <figcaption>
-                                 <h2>Lorem <span>Ipsum</span></h2>
-                                 <p>[35 properties]</p>
-                                 <a href="#">View more</a>
-                             </figcaption>
-                         </figure>
-                     </div>
-                     <div class="col-md-4 col-sm-6 col-xs-12 grid slideanim">
-                         <figure class="effect-selena scrollReveal sr-scaleUp sr-delay-2">
-                             <img alt="img10" src="images/Home/dep.png" style="width:365px; height: 300px">
-                             <figcaption>
-                                 <h2>Lorem <span>Ipsum</span></h2>
-                                 <p>[19 properties]</p>
-                                 <a href="#">View more</a>
-                             </figcaption>
-                         </figure>
-                     </div>
-                     <div class="col-md-4 col-sm-6 col-xs-12 grid slideanim">
-                         <figure class="effect-selena scrollReveal sr-scaleUp sr-delay-3">
-                             <img alt="img10" src="images/Home/dep.png" style="width:365px; height: 300px">
-                             <figcaption>
-                                 <h2>Lorem <span>Ipsum</span></h2>
-                                 <p>[42 properties]</p>
-                                 <a href="#">View more</a>
-                             </figcaption>
-                         </figure>
-                     </div>
-                 </div>
-             </div>
-         </section>
-         end-->
+      
       <!--service block-->
       <section class="recent-property-block">
          <div class="container">

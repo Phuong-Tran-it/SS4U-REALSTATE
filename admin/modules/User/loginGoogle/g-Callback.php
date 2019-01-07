@@ -21,7 +21,7 @@
 	$_SESSION['familyName'] = $userData['familyName'];
 	$_SESSION['givenName'] = $userData['givenName'];
 	$_SESSION['phone'] = $userData['phone'];
-
+	$_SESSION['name'] = $userData['displayName'];
 	header('Location: LoginGoogle.php');
 	exit();
 ?>
