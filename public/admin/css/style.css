@@ -1549,7 +1549,7 @@ body {
 
 #exTab1 .tab-content {
   color : black;
-  background-color: #428bca;
+  background-color: #ffffff;
   padding : 5px 15px;
 }
 
@@ -1609,4 +1609,5 @@ body {
 .col:nth-child(odd){
     background-color:white;
 }
+
 

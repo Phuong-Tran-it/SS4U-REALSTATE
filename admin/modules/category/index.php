@@ -13,7 +13,7 @@
       <div >
          <ol class="breadcrumb">
             <li>
-               <i class="fa fa-home"></i><a href="<?php echo base_url() ?>home.php">Trang Chủ</a>
+               <i class="fa fa-home"></i><a href="/SS4UREALSTATE/admin/modules/admin/Dashboard/Dashboard.php">Trang Chủ</a>
             </li>
             <li class="active">
                <i class="fa fa-file"></i>Danh Mục Chủ Đầu Tư

@@ -47,7 +47,7 @@
                         </td>
                         <td><?php echo formatPrice($val['price']) ?></td>
                         <td>
-                           <input type="number" name="qty" value="<?php echo $val['qty'] ?>" class="form-control">
+                           <input type="text" name="qty" value="<?php echo $val['qty'] ?>" class="form-control">
                         </td>
                         <td>
                            <?php 
@@ -107,7 +107,7 @@
                Thông Tin Thanh Toán
                </button>
                <li class="list-group-item">
-                  <span class="badge pull"><?php echo $_SESSION['tongtien'] ?>đ</span>Giá Tiền
+                  <span class="badge pull"><?php echo formatPrice($_SESSION['tongtien']) ?>đ</span>Giá Tiền
                </li>
                <li class="list-group-item">
                   <span class="badge pull">10%</span>VAT 
@@ -116,7 +116,7 @@
                   <span class="badge pull"><?php echo sale($_SESSION['tongtien']) ?> %</span>Giảm Giá
                </li>
                <li class="list-group-item">
-                  <span class="badge pull"><?php $_SESSION['total']= $_SESSION['tongtien']*110/100;echo $_SESSION['total'] ?></span>Thanh Toán
+                  <span class="badge pull"><?php $_SESSION['total']= $_SESSION['tongtien']*110/100;echo formatPrice($_SESSION['total']) ?></span>Thanh Toán
                </li>
                <li class="list-group-item">
                		<a href="/../../../SS4UREALSTATE/home.php" class="btn btn-success">Tiếp Tục Tham Khảo</a>

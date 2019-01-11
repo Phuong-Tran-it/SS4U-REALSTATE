@@ -223,6 +223,28 @@
             }
             return $data;
         }
+        public function view($product)
+        {
+          $id =$product->ma_sp;
+          $flag =1;
+          if(\Session::exists('view'))
+          {
+            $view =\Session::get('view');
+            if(array_key_exists($id,$view['product']))
+            {
+              $time = time();
+              $view =\Session::get('view');
+              $viewPost = $view['product'][$id];
+              if(($viewPost['time']+ $this->timeStop)>$time)$flag = 0;
+            }
+          }
+          if($flag==1)
+          {
+            $view['product'][$id]=['time'=>time()];
+            \Session::put('view',$view);
+            \DB::table('san_pham')->where('ma_sp',$id)->increment('view');
+          }
+        }
    
     }
    ?>

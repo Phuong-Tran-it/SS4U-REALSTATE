@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         </button>
                         <div class="logo">
-                           <a href="/SS4UREALSTATE/admin/modules/admin/home.php"><img src="/SS4UREALSTATE/public/admin/images/logo.png" alt="logo"></a>
+                           <a href="/SS4UREALSTATE/admin/modules/admin/Dashboard/Dashboard.php"><img src="/SS4UREALSTATE/public/admin/images/logo.png" alt="logo"></a>
                         </div>
                      </div>
                   </div>

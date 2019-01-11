@@ -56,7 +56,7 @@
       <div >
          <ol class="breadcrumb">
             <li>
-               <i class="fa fa-home"></i><a href="<?php echo base_url() ?>home.php">Trang Chủ</a>
+               <i class="fa fa-home"></i><a href="/SS4UREALSTATE/admin/modules/admin/Dashboard/Dashboard.php">Trang Chủ</a>
             </li>
             <li>
                <i></i><a href="index.php">Danh Sách Chủ Đầu Tư</a>

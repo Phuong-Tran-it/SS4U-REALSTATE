@@ -3,6 +3,7 @@
     require_once __DIR__. "/../../libraries/Function.php";
     $db = new Database;
    $category =$db->fetchAll("category");
+   $product =$db->fetchAll("product");
    ?>
 <section class="finder-block">
             <div class="container">
@@ -98,10 +99,9 @@
                             <div class="col-md-3 col-sm-6 col-xs-12 scrollReveal sr-scaleDown sr-delay-4">
                                 <select>
                                     <option>Tình Trạng</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
+                                    <option>Mới</option>
+                                    <option>Đang Thi Công</option>
+                                    <option>Sử Dụng</option>
                                 </select>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12 scrollReveal sr-scaleDown sr-delay-1">
@@ -109,11 +109,7 @@
                                     <option>Khoảng Giá</option>
                                 </select>
                             </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 scrollReveal sr-scaleDown sr-delay-2">
-                                <select>
-                                    <option>Khu Vực</option>
-                                </select>
-                            </div>
+                            
                             <div class="col-md-3 col-sm-6 col-xs-12 scrollReveal sr-scaleDown sr-delay-3">
                                 <select>
                                     <option>Phòng Ngủ</option>
@@ -127,6 +123,7 @@
                             <div class="col-md-offset-0 col-md-12 col-sm-offset-0 col-sm-12 col-xs-offset-1 col-xs-10 scrollReveal sr-scaleDown sr-delay-4">
                                 <div class="find-home">
                                     <button class="btn btn-lg btn-white">Tìm Kiếm</button>
+                                    <button class="btn btn-lg ">Nâng Cao</button>
                                 </div>
                             </div>
                         </form>

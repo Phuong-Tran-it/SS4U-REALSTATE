@@ -66,20 +66,12 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-4 col-sm-1">
+                   <div class="col-md-4 col-sm-1 remove-right">
                      <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="nav navbar-nav">
                           <?php if(isset($_SESSION['name_user'])): ?> 
                            <li >
-                            <div class="dropdown">
-
-                              <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>" class="dropbtn"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
-                              <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-                            </div>
+                              <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
 
                            <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-shopping-cart"></i></a></li>
@@ -174,6 +166,7 @@
       <!--end-->
       
       <!--cây tìm kiếm-->
+
       <?php require_once __DIR__. "/admin/function/SearchTree.php";?>
       <!--end-->
       <!--counter block-->
@@ -283,12 +276,12 @@
 
                               <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-info"></i></a>
                               <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                              <a class="face_one" href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-bookmark"></i></a>
                            </div>
                         </div>
                      </div>
                      <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice($item['price']) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
+                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
                    </a>
                   </div>
                 <?php endforeach ?>
@@ -322,7 +315,7 @@
                         </div>
                      </div>
                      <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice($item['price']) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?><i class="fa fa-money"></i><?php echo $item['pay'] ?></p>
+                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?><i class="fa fa-money"></i><?php echo $item['pay'] ?></p>
                    </a>
                   </div>
                 <?php endforeach ?>
@@ -352,7 +345,7 @@
                         </div>
                      </div>
                      <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice($item['price']) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
+                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
                    </a>
                   </div>
                 <?php endforeach ?>
@@ -425,10 +418,11 @@
                © 2018 All right reserved. Designed by <a href="http://www.ss4u.vn/" target="_blank">PhuongTran.</a>
             </div>
          </div>
+
       </footer>
       <!--end-->
       <!--back to top--->
-      <a id="back-to-top" class="scrollTop back-to-top" href="javascript:void(0);" style="display: none;">
+      <a id="back-to-top" class="" href="javascript:void(0);" style="display: none;">
       <img src="public/admin/images/top-arrow.png" alt="back-to-top"/>
       </a>
       <script>

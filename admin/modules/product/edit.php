@@ -36,7 +36,7 @@
             "category_id" => postInput('category_id'),
               "OPENING_DAY" => postInput('OPENING_DAY'),
               "FINAL_DAY" => postInput('FINAL_DAY'),
-           "status" => postInput("status") //Tình Trạng
+           "TTCANHO_NAME" => postInput("TTCANHO_NAME") //Tình Trạng
       ];
       $error = [];
       //if
@@ -82,9 +82,9 @@
       {
          $error['SL_WC']="Thiếu";
       }
-      if(postInput('status')=='')
+      if(postInput('TTCANHO_NAME')=='')
       {
-         $error['status']="Thiếu";
+         $error['TTCANHO_NAME']="Thiếu";
       }
       if(postInput('price')=='')
       {
@@ -133,7 +133,7 @@
       <div >
          <ol class="breadcrumb">
             <li>
-               <i class="fa fa-home"></i><a href="<?php echo base_url() ?>home.php">Trang Chủ</a>
+               <i class="fa fa-home"></i><a href="/SS4UREALSTATE/admin/modules/admin/Dashboard/Dashboard.php">Trang Chủ</a>
             </li>
             <li>
                <i></i><a href="index.php">Bất Động Sản</a>
@@ -296,10 +296,10 @@
                         </div>
                         <div class="form-group col-md-6">
                            <label for="inputAddress">Tình trạng</label>
-                           <input type="text" class="form-control" id="inputAddress" placeholder="" name="status"
-                              value="<?php echo $Editproduct['status'] ?>">
-                           <?php if (isset($error['status'])):?>
-                           <p class="text-danger"> <?php echo $error['status'] ?></p>
+                           <input type="text" class="form-control" id="inputAddress" placeholder="" name="TTCANHO_NAME"
+                              value="<?php echo $Editproduct['TTCANHO_NAME'] ?>">
+                           <?php if (isset($error['TTCANHO_NAME'])):?>
+                           <p class="text-danger"> <?php echo $error['TTCANHO_NAME'] ?></p>
                            <?php endif?>
                         </div>
                         <div class="form-group">

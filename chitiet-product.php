@@ -3,8 +3,8 @@
 <?php 
     $id = intval(getInput('id'));
     $product = $db->fetchID("product",$id);
-    $ID = $product['category_id'];
-    $category = $db->fetchID("category",$ID);
+    //$ID = $product['category_id'];
+    //$category = $db->fetchID("category",$ID);
  ?>
  <title>Chi Tiết Sản Phẩm</title>
 <body>
@@ -192,12 +192,14 @@
                                    
                                 </ul>
                             </div>
+
                             <div class="col-md-6 bor" style="margin-top: 20px;padding: 30px;">
                                <ul id="right">
-                                    <li><h3> <?php echo $product['HOUSE_DETAIL_CODE'] ?> </h3></li>
-                                    <li><h4>Thuộc Dự Án: <?php echo $category['name'] ?></h4></li>
-                                    <li><p><strong><b class="price"><?php echo formatPrice  ($product['price']) ?>đ</b></strong></li>
-                                    <li><a href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $product['id']?>" class="btn btn-primary"> <i class="fa fa-shopping-basket"></i>Chọn</a></li>
+                                    <li><h3> <?php echo $product['HOUSE_DETAIL_NAME'] ?> </h3></li>
+                                    <!--<li><h4>Thuộc Dự Án: <?php echo $category['name'] ?></h4></li>-->
+                                    <li><p class="text-danger"><strong><b class="price"><?php echo formatPrice(round($product['price'],-6)) ?>đ</b></strong></li>
+                                        <br>
+                                    <a href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $product['id']?>" class="btn btn-primary"> <i class="fa fa-calendar"></i> Đặt Chỗ</a>
                                </ul>
                             </div>
 
@@ -213,18 +215,18 @@
                                 </ul>
                                 <div class="tab-content">
                                     <div id="home" class="tab-pane fade in active">
-                                        <h3>Nội dung</h3>
+                                        <h2>Địa Chỉ: <?php echo $product['DIA_CHI'] ?></h2>
 <div class="col-wrap">
     <div class="col">
         <p>Mã Block: <?php echo $product['HOUSE_DETAIL_CODE'] ?></p>
         <p>Mã Tòa Nhà: <?php echo $product['BUILDING_ID'] ?></p>
-        <p>Số Tầng: <?php echo $product['FLOOR_ID'] ?></p>
+        <p>Tầng Số: <?php echo $product['FLOOR_ID'] ?></p>
     </div>
 
     <div class="col">
         
         
-        <p>Hướng: <?php echo $product['HOUSE_VIEW'] ?></p>
+        <p>Hướng: <?php echo $product['HOUSE_VIEW'];echo $product['HOUSE_DIRECTION'] ?></p>
         <p>Diện Tích Sàn: <?php echo $product['DT_LUNG'] ?></p>
     </div>
 

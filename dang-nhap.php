@@ -73,7 +73,7 @@
          <div class="panel-heading">
             <!--Đăng Nhập Thất Bại-->
             <?php if (isset($_SESSION['error'])): ?>
-            <div class="alert alert-error">
+            <div class="alert alert-danger" role="alert">
                <strong>Error!</strong> <?php echo $_SESSION['error'] ;unset($_SESSION['error'])?>
             </div>
             <?php endif ?>
