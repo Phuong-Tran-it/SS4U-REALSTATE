@@ -21,164 +21,12 @@
             
             <div id="maincontent">
                 <div class="container">
-                    <div class="col-md-3  fixside" >
-                        <div class="box-left box-menu" >
-                            <h3 class="box-title"><i class="fa fa-list"></i>  Danh mục</h3>
-                            <ul>
-                                <li>
-                                    <a href="">  <span class="badge pull-right"></span></a>
-                                    <ul>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="">  <span class="badge pull-right"></span></a>
-                                    <ul>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href=""> <span class="badge pull-right"></span></a>
-                                </li>
-                                <li>
-                                    <a href="">   <span class="badge pull-right"></span> </a>
-                                    <ul>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="box-left box-menu">
-                            <h3 class="box-title"><i class="fa fa-warning"></i>  Sản phẩm mới </h3>
-                           <!--  <marquee direction="down" onmouseover="this.stop()" onmouseout="this.start()"  >
-                            <ul>
-                                
-                                <li class="clearfix">
-                                    <a href="">
-                                        <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                        <div class="info pull-right">
-                                            <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                            <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                            <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                            <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                 <li class="clearfix">
-                                    <a href="">
-                                        <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                        <div class="info pull-right">
-                                            <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                            <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                            <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                            <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>                                            
-                                        </div>
-                                    </a>
-                                </li>
-
-                                 <li class="clearfix">
-                                    <a href="">
-                                        <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                        <div class="info pull-right">
-                                            <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                            <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                            <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                            <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
-                                            
-                                        </div>
-                                    </a>
-                                </li>
-
-                                 <li class="clearfix">
-                                    <a href="">
-                                        <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                        <div class="info pull-right">
-                                            <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                            <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                            <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                            <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
-                                        </div>
-                                    </a>
-                                </li>
-                               
-                            </ul>
-                            <!-- </marquee> -->
-                        </div>
-
-                        <div class="box-left box-menu">
-                            <h3 class="box-title"><i class="fa fa-warning"></i>  Sản phẩm mới </h3>
-                           <!--  <marquee direction="down" onmouseover="this.stop()" onmouseout="this.start()"  > 
-                            <ul>
-                                
-                                <li class="clearfix">
-                                    <a href="">
-                                        <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                        <div class="info pull-right">
-                                            <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                            <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                            <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                            <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                 <li class="clearfix">
-                                    <a href="">
-                                        <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                        <div class="info pull-right">
-                                            <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                            <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                            <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                            <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>                                            
-                                        </div>
-                                    </a>
-                                </li>
-
-                                 <li class="clearfix">
-                                    <a href="">
-                                        <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                        <div class="info pull-right">
-                                            <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                            <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                            <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                            <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
-                                            
-                                        </div>
-                                    </a>
-                                </li>
-
-                                 <li class="clearfix">
-                                    <a href="">
-                                        <img src="images/16-270x270.png" class="img-responsive pull-left" width="80" height="80">
-                                        <div class="info pull-right">
-                                            <p class="name"> Loa  mới nhất 2016  Loa  mới nhất 2016 Loa  mới nhất 2016</p >
-                                            <b class="price">Giảm giá: 6.090.000 đ</b><br>
-                                            <b class="sale">Giá gốc: 7.000.000 đ</b><br>
-                                            <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
-                                        </div>
-                                    </a>
-                                </li>
-                               
-                            </ul>
-                            <!-- </marquee> -->
-                        </div>
-                    </div>
-                    <div class="col-md-9 bor">
+                    
+                    <div class="col-md-12 bor">
                         
 
                         <section >
-                            <div class="col-md-6 text-center">
+                            <div class="col-md-8 text-center">
                                 <img src="<?php echo uploads() ?>product/<?php echo $product['thunbar'] ?>" id="imgmain" width="100%" height="370" data-zoom-image="images/16-270x270.png">
                                 
                                 <ul>
@@ -193,15 +41,18 @@
                                 </ul>
                             </div>
 
-                            <div class="col-md-6 bor" style="margin-top: 20px;padding: 30px;">
-                               <ul id="right">
-                                    <li><h3> <?php echo $product['HOUSE_DETAIL_NAME'] ?> </h3></li>
+                            <div class="col-md-4 bor" style="margin-top: 10px;padding: 10px;background: #cd8225 ">
+                               <ul id="right" style="">
+                                    <h3 style="color: white"> <?php echo $product['HOUSE_DETAIL_CODE'] ?> </h3>
                                     <!--<li><h4>Thuộc Dự Án: <?php echo $category['name'] ?></h4></li>-->
-                                    <li><p class="text-danger"><strong><b class="price"><?php echo formatPrice(round($product['price'],-6)) ?>đ</b></strong></li>
+                                    <p ><strong style="color: white"><b class="price"><?php echo formatPrice(round($product['price'],-6)) ?>đ</b></strong>
                                         <br>
-                                    <a href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $product['id']?>" class="btn btn-primary"> <i class="fa fa-calendar"></i> Đặt Chỗ</a>
+                                    
                                </ul>
                             </div>
+                            <div class="col-md-4 bor" style="margin-top: 20px;padding: 30px;">
+                            <a href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $product['id']?>" class="btn btn-primary"> <i class="fa fa-calendar"></i> Liên Hệ Xem Nhà</a>
+                        </div>
 
                         </section>
                         <div class="col-md-12" id="tabdetail">

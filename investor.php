@@ -248,7 +248,8 @@
       <!--end-->
       <!--back to top--->
       <a id="back-to-top" class="scrollTop back-to-top" href="javascript:void(0);" style="display: none;">
-      <img src="images/top-arrow.png" alt="back-to-top"/>
+   <img src="public/admin/images/top-arrow.png" alt="back-to-top"/>
+   </a>
       </a>
    </body>
 </html>

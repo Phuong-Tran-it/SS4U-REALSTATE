@@ -1,12 +1,13 @@
 <?php require_once __DIR__. "/admin/autoload/autoload.php";?>
 <?php 
       //Mới Nhất
-      $sqlHomenew= "SELECT * FROM product WHERE 1 ORDER BY CREATION_DATE DESC LIMIT 6"; 
+      $sqlHomenew= "SELECT * FROM product WHERE 1 ORDER BY CREATION_DATE DESC LIMIT 12"; 
       $productnew= $db->fetchsql($sqlHomenew);
       //xem nhiều
-      $sqlHomeView= "SELECT * FROM product WHERE 1 ORDER BY view DESC LIMIT 6";
+      $sqlHomeView= "SELECT * FROM product WHERE 1 ORDER BY view DESC LIMIT 12";
       $ProductView= $db->fetchsql($sqlHomeView);
       $data= [];
+
 ?>
 
 <!DOCTYPE html>
@@ -161,14 +162,19 @@
       </div>
 
       <div class="clearfix"></div>
-      <!--Thông Tin Liên Lạc-->
+      <!--Thông Tin Liên Lạc
       <?php require_once __DIR__. "/layouts/lienlac.php";?>
       <!--end-->
       
       <!--cây tìm kiếm-->
-
+      <section class="finder-block">
+            <div class="container">
+                <div class="text-head text-center">
+                    <h1>Tìm Kiếm Bất Động Sản</h1>
+                </div>
       <?php require_once __DIR__. "/admin/function/SearchTree.php";?>
       <!--end-->
+      
       <!--counter block-->
       <section class="counter-block">
          <div class="container">
@@ -281,7 +287,7 @@
                         </div>
                      </div>
                      <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
+                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ</p>
                    </a>
                   </div>
                 <?php endforeach ?>
@@ -299,7 +305,7 @@
             </div>
             <div class="staff-team">
                <div class="row">
-                <?php  $sqlHomeSELL= "SELECT * FROM product WHERE 1 ORDER BY pay DESC LIMIT 6"; 
+                <?php  $sqlHomeSELL= "SELECT * FROM product WHERE 1 ORDER BY pay DESC LIMIT 12"; 
       $ProductSELL= $db->fetchsql($sqlHomeSELL);?>
                  <?php foreach ($ProductSELL as $item): ?>
                   <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
@@ -315,7 +321,7 @@
                         </div>
                      </div>
                      <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?><i class="fa fa-money"></i><?php echo $item['pay'] ?></p>
+                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ </p>
                    </a>
                   </div>
                 <?php endforeach ?>
@@ -345,7 +351,7 @@
                         </div>
                      </div>
                      <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
+                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ </p>
                    </a>
                   </div>
                 <?php endforeach ?>
@@ -422,9 +428,9 @@
       </footer>
       <!--end-->
       <!--back to top--->
-      <a id="back-to-top" class="" href="javascript:void(0);" style="display: none;">
-      <img src="public/admin/images/top-arrow.png" alt="back-to-top"/>
-      </a>
+      <a id="back-to-top" class="scrollTop back-to-top" href="javascript:void(0);" style="display: none;">
+   <img src="public/admin/images/top-arrow.png" alt="back-to-top"/>
+   </a>
       <script>
          $('.bxslider').bxSlider({
              moveSlides: 1,
