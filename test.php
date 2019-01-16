@@ -99,7 +99,11 @@ while (($row = oci_fetch_array($result, OCI_BOTH)) != false) {
          "ITEM_ID" =>$row[18],
          "DIA_CHI" =>$row[19]
       ];
+      $is_check = $db->fetchOne("product"," ITEM_ID = '".$data['ITEM_ID']."' ");
+      if($is_check == NULL){
       $id_insert = $db->insert("product",$data);
+      }
+
 }
 
 oci_free_statement($result);

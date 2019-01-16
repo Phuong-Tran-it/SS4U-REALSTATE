@@ -12,7 +12,7 @@
              <section class="staff-block">
          <div class="container">
             <div class="text-head text-center">
-               <h1>Kết Quả Tìm Kiếm</h1>
+               <h1>Có <?php echo count($ProductVIP) ?> Kết Quả Tìm Kiếm</h1>
             </div>
             <div class="staff-team">
                <div class="row">
@@ -47,4 +47,5 @@
                <h1>Không Có Kết Quả</h1>
             </div>
 <?php }?>
+
    </body>

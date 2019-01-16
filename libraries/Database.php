@@ -175,7 +175,6 @@
         {
         
             $data = [];
-            // _debug($sql);die;
             if ($pagi == true )
             {
                 $total = $this->countTable($table);
@@ -198,7 +197,6 @@
                     $data[] = $num;
                 }
             }
-            // _debug($data);
             return $data;
         }
 

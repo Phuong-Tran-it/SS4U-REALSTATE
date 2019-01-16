@@ -1609,5 +1609,4 @@ body {
 .col:nth-child(odd){
     background-color:white;
 }
-
-
+.ex3 {display: block;}

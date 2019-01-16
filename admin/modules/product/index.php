@@ -3,7 +3,7 @@
    require_once __DIR__. "/../../autoload/autoload.php";
    require_once __DIR__. "/../../layout/ADMINHEADER.php";
    $product =$db->fetchAll("product");
-   /*
+   
    if(isset($_GET['page']))
    {
       $p = $_GET['page'];
@@ -21,7 +21,7 @@
       $sotrang = $product['page'];
       unset($product['page']);
    }
-   */
+   
 ?>
 <title>Danh Mục Sản Phẩm</title>
 <!---end--->
@@ -102,7 +102,7 @@
                         <li class="page-item disabled">
                            <span class="page-link">Trước</span>
                         </li>
-<!--
+
                         <?php for( $i =1 ; $i <= $sotrang ; $i++): ?>
                         <?php
                            if(isset($_GET['page']))
@@ -119,7 +119,7 @@
                            <a href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
                         </li>
                         <?php endfor; ?>
-                        -->
+                        
                         <li class="page-item">
                            <a class="page-link" href="#">Sau</a>
                         </li>
