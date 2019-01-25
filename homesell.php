@@ -22,7 +22,7 @@
       <script src="public/admin/js/waypoints.min.js" type="text/javascript"></script>
       <script src="public/admin/js/bxslider.js" type="text/javascript"></script>
       <script type="text/javascript" src="public/admin/js/instafeed.min.js"></script>
-      <script src="public/admin/js/custom.js" type="text/javascript"></script>
+      
    </head>
    <body>
       <!--header--->
@@ -65,7 +65,7 @@
                               <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
 
-                           <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-shopping-cart"></i></a></li>
+                           <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-calendar"></i></a></li>
                            <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
 
                            <?php else :?>
@@ -85,6 +85,7 @@
       <body>
          <div class="clearfix"></div>
          <div class="container">
+
             <h1></h1>
          </div>
          <div id="exTab1" class="container">
@@ -144,7 +145,7 @@
                            </div>
                         </div>
                         <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item2['id']?>">
-                           <p><?php echo $item2['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice($item2['price']) ?>đ <br><i class="fa fa-eye"></i><?php echo $item2['view'] ?> <i class="fa fa-heart"></i><?php echo $item2['head'] ?></p>
+                           <p><?php echo $item2['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ <br><i class="fa fa-eye"></i><?php echo $item2['view'] ?> <i class="fa fa-heart"></i><?php echo $item2['head'] ?></p>
                         </a>
                      </div>
                      <?php endforeach ?>
@@ -167,7 +168,7 @@
                            </div>
                         </div>
                         <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                           <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice($item['price']) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
+                           <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
                         </a>
                      </div>
                      <?php endforeach ?>
@@ -190,7 +191,7 @@
                            </div>
                         </div>
                         <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                           <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice($item['price']) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
+                           <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
                         </a>
                      </div>
                      <?php endforeach ?>
@@ -213,7 +214,7 @@
                            </div>
                         </div>
                         <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                           <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice($item['price']) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
+                           <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ <br><i class="fa fa-eye"></i><?php echo $item['view'] ?> <i class="fa fa-heart"></i><?php echo $item['head'] ?></p>
                         </a>
                      </div>
                      <?php endforeach ?>

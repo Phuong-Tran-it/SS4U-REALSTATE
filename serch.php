@@ -1,5 +1,7 @@
 <?php require_once __DIR__. "/admin/autoload/autoload.php";?>
-<?php require_once __DIR__. "/admin/layout/header.php";?>
+<?php require_once __DIR__. "/admin/layout/header.php";
+?>
+<title>Tìm Kiếm</title>
    <body>
       <br><br><br>
       <!--cây tìm kiếm-->
@@ -16,11 +18,11 @@
             </div>
             <div class="staff-team">
                <div class="row">
-
-                <?php foreach ($ProductVIP as $item): ?>
+                <?php foreach ($ProductVIP as $item): ?>  
                   <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
                      <div class="team_pos">
-                        <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
+                        <img alt=" " src="public/uploads/product/dep.png" class="img-responsive" style="width:300px; height: 200px">
+                        <!--<img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">-->
                         <div class="team_info">
                            <div class="social-icons-effect">
 
@@ -43,9 +45,11 @@
         <br><br>
       <?php } ?>
       <?php if($ProductVIP == NULL) {?>
+        <section class="staff-block">
+         <div class="container">
             <div class="text-head text-center">
                <h1>Không Có Kết Quả</h1>
-            </div>
+            </div></div></section>
 <?php }?>
 
    </body>

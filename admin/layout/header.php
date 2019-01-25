@@ -51,8 +51,8 @@
                               <a href="#page-top" class="page-scroll"></a>
                            </li>
                            <li ><a href="/SS4UREALSTATE/home.php" class="page-scroll">Trang Chủ</a></li>
-                           <li><a href="/SS4UREALSTATE/investor.php" class="page-scroll">Giới Thiệu</a></li>
-                           <li><a href="/SS4UREALSTATE/homesell.php" class="page-scroll">Đại Diện</a></li>
+                           <li><a href="/SS4UREALSTATE/investor.php" class="page-scroll">Chủ Đầu Tư</a></li>
+                           <li><a href="/SS4UREALSTATE/homesell.php" class="page-scroll">Nhà Đất Bán</a></li>
                            
                            
                         </ul>
@@ -68,7 +68,7 @@
                               <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
 
-                           <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-shopping-cart"></i></a></li>
+                           <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-calendar"></i></a></li>
                            <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
 
                            <?php else :?>

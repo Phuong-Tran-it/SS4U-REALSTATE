@@ -1,14 +1,14 @@
 <?php 
    require_once __DIR__. "/../../autoload/autoload.php";
-
    $user = $db->fetchID("users",intval($_SESSION['name_id']));
    if($_SERVER["REQUEST_METHOD"] = "POST")
-   {
+   {     if(isset($_SESSION['total'])){
    		$data=
    		[
    			'amount' => $_SESSION['total'],
-   			'users_id' => $_SESSION['name_id']
+   			'users_id' => $_SESSION['name_id'],
    		];
+
    		$idtran = $db->insert("transaction",$data);
    		if($idtran >0)
    		{
@@ -27,6 +27,11 @@
    			unset($_SESSION['total']);
    			$_SESSION['success'] = " Lưu Thành Công, Chúng Tôi Sẽ Liên Hệ Cho Bạn Sớm Nhất !";
    		}
+         }
+         else
+         {
+            echo "<script>location.href='/../../../SS4UREALSTATE/home.php'</script>";
+         }
    }
    ?>
    <?php    require_once __DIR__. "/../../layout/header.php"; ?>

@@ -1,15 +1,14 @@
 <?php require_once __DIR__. "/admin/autoload/autoload.php";?>
 <?php 
-      //Mới Nhất
-      $sqlHomenew= "SELECT * FROM product WHERE 1 ORDER BY CREATION_DATE DESC LIMIT 12"; 
-      $productnew= $db->fetchsql($sqlHomenew);
-      //xem nhiều
-      $sqlHomeView= "SELECT * FROM product WHERE 1 ORDER BY view DESC LIMIT 12";
-      $ProductView= $db->fetchsql($sqlHomeView);
-      $data= [];
-
-?>
-
+   //Mới Nhất
+   $sqlHomenew= "SELECT * FROM product WHERE 1 ORDER BY CREATION_DATE DESC LIMIT 12"; 
+   $productnew= $db->fetchsql($sqlHomenew);
+   //xem nhiều
+   $sqlHomeView= "SELECT * FROM product WHERE 1 ORDER BY view DESC LIMIT 12";
+   $ProductView= $db->fetchsql($sqlHomeView);
+   $data= [];
+   
+   ?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -18,8 +17,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="public/admin/images/favicon.ico"/>
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
       <title>Trang Chủ</title>
       <!-- Bootstrap core CSS -->
       <link href="public/admin/css/scrolling-nav.css" rel="stylesheet" media="all">
@@ -37,12 +36,10 @@
       <script src="public/admin/js/waypoints.min.js" type="text/javascript"></script>
       <script src="public/admin/js/bxslider.js" type="text/javascript"></script>
       <script type="text/javascript" src="public/admin/js/instafeed.min.js"></script>
-      <script src="public/admin/js/custom.js" type="text/javascript"></script>
    </head>
    <body>
       <!--header--->
       <header>
-
          <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                <div class="row">
@@ -67,23 +64,23 @@
                         </ul>
                      </div>
                   </div>
-                   <div class="col-md-4 col-sm-1 remove-right">
+                  <div class="col-md-4 col-sm-1 remove-right">
                      <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="nav navbar-nav">
-                          <?php if(isset($_SESSION['name_user'])): ?> 
+                           <?php if(isset($_SESSION['name_user'])): ?> 
                            <li >
                               <a href="/SS4UREALSTATE/edit-profile.php?id=<?php echo $_SESSION['name_id']?>"><i class="fa fa-user"></i><?php echo $_SESSION['name_user'] ?></i></a>
                            </li>
-
-                           <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-shopping-cart"></i></a></li>
+                           <li><a href="/SS4UREALSTATE/admin/modules/User/Gio-Hang.php"><i class="fa fa-calendar"></i></a></li>
                            <li><a href="/SS4UREALSTATE/thoat.php"><i class="fa fa-share-square-o"></i></a></li>
-
                            <?php else :?>
                            <li>
                               <a href="/SS4UREALSTATE/dang-nhap.php"><i class="fa fa-unlock"></i>&nbsp; Đăng Nhập</a>
                            </li>
                            <?php endif;?>
-                         </ul></div></div>
+                        </ul>
+                     </div>
+                  </div>
                   <!-- /navbar-collapse 
                      <div class="col-md-2 col-sm-1">
                          <a class="search" id="searchtoggl"><i class="fa fa-search"></i></a>
@@ -160,21 +157,19 @@
          </div>
          <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="fa fa-angle-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="fa fa-angle-right"></span></a>
       </div>
-
-      <div class="clearfix"></div>
       <!--Thông Tin Liên Lạc
-      <?php require_once __DIR__. "/layouts/lienlac.php";?>
-      <!--end-->
-      
+         <?php require_once __DIR__. "/layouts/lienlac.php";?>
+         <!--end-->
       <!--cây tìm kiếm-->
       <section class="finder-block">
-            <div class="container">
-                <div class="text-head text-center">
-                    <h1>Tìm Kiếm Bất Động Sản</h1>
-                </div>
-      <?php require_once __DIR__. "/admin/function/SearchTree.php";?>
-      <!--end-->
-      
+         <div class="container">
+            <div class="text-head text-center">
+               <h1>Tìm Kiếm Bất Động Sản</h1>
+            </div>
+            <?php require_once __DIR__. "/admin/function/SearchTree.php";?>
+            <!--end-->
+         </div>
+      </section>
       <!--counter block-->
       <section class="counter-block">
          <div class="container">
@@ -208,7 +203,6 @@
          <div class="clearfix"></div>
       </section>
       <!---end--->
-      
       <!--service block-->
       <section class="recent-property-block">
          <div class="container">
@@ -272,14 +266,14 @@
             </div>
             <div class="staff-team">
                <div class="row">
-
-                <?php foreach ($productnew as $item): ?>
+                  <?php foreach ($productnew as $item): ?>
                   <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
                      <div class="team_pos">
-                        <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
+                        <img alt=" " src="public/uploads/product/dep.png" class="img-responsive" style="width:300px; height: 200px">
+                        <!--<img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">-->
+                        
                         <div class="team_info">
                            <div class="social-icons-effect">
-
                               <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-info"></i></a>
                               <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
                               <a class="face_one" href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-bookmark"></i></a>
@@ -287,10 +281,10 @@
                         </div>
                      </div>
                      <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ</p>
-                   </a>
+                        <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ</p>
+                     </a>
                   </div>
-                <?php endforeach ?>
+                  <?php endforeach ?>
                </div>
                <div class="clearfix"></div>
             </div>
@@ -300,31 +294,31 @@
       <!--Bán Nhiều Nhất-->
       <section class="staff-block">
          <div class="container">
-            <div class="text-head text-center">
-               <h1>Bán Nhiều Nhất</h1>
-            </div>
-            <div class="staff-team">
-               <div class="row">
-                <?php  $sqlHomeSELL= "SELECT * FROM product WHERE 1 ORDER BY pay DESC LIMIT 12"; 
-      $ProductSELL= $db->fetchsql($sqlHomeSELL);?>
-                 <?php foreach ($ProductSELL as $item): ?>
-                  <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
-                     <div class="team_pos">
-                        <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
-                        <div class="team_info">
-                           <div class="social-icons-effect">
-
-                              <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-info"></i></a>
-                              <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
-                           </div>
+         <div class="text-head text-center">
+            <h1>Bán Nhiều Nhất</h1>
+         </div>
+         <div class="staff-team">
+            <div class="row">
+               <?php  $sqlHomeSELL= "SELECT * FROM product WHERE 1 ORDER BY pay DESC LIMIT 12"; 
+                  $ProductSELL= $db->fetchsql($sqlHomeSELL);?>
+               <?php foreach ($ProductSELL as $item): ?>
+               <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
+                  <div class="team_pos">
+                     <img alt=" " src="public/uploads/product/dep.png" class="img-responsive" style="width:300px; height: 200px">
+                     <!--<img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">-->
+                     <div class="team_info">
+                        <div class="social-icons-effect">
+                           <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-info"></i></a>
+                           <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
+                           <a class="face_one" href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-bookmark"></i></a>
                         </div>
                      </div>
-                     <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ </p>
-                   </a>
                   </div>
-                <?php endforeach ?>
+                  <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
+                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ </p>
+                  </a>
+               </div>
+               <?php endforeach ?>
             </div>
          </div>
       </section>
@@ -340,21 +334,21 @@
                   <?php foreach ($ProductView as $item): ?>
                   <div class=" col-sm-2 col-sm-2 team_gd1 scrollReveal sr-delay-1">
                      <div class="team_pos">
-                        <img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">
+                        <img alt=" " src="public/uploads/product/dep.png" class="img-responsive" style="width:300px; height: 200px">
+                        <!--<img alt=" " src="<?php echo uploads() ?>product/<?php echo $item['thunbar'] ?>" class="img-responsive" style="width:300px; height: 200px">-->
                         <div class="team_info">
                            <div class="social-icons-effect">
-
                               <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-info"></i></a>
                               <a class="face_one" href="#"><i aria-hidden="true" class="fa fa-heart"></i></a>
-                              <a class="face_one" href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-shopping-cart"></i></a>
+                              <a class="face_one" href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $item['id']?>"><i aria-hidden="true" class="fa fa-bookmark"></i></a>
                            </div>
                         </div>
                      </div>
                      <a class="face_one" href="/SS4UREALSTATE/chitiet-product.php?id=<?php echo $item['id']?>">
-                     <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ </p>
-                   </a>
+                        <p><?php echo $item['HOUSE_DETAIL_CODE'] ?><br><?php echo formatPrice(round($item['price'],-6)) ?>đ </p>
+                     </a>
                   </div>
-                <?php endforeach ?>
+                  <?php endforeach ?>
                </div>
                <div class="clearfix"></div>
             </div>
@@ -424,13 +418,12 @@
                © 2018 All right reserved. Designed by <a href="http://www.ss4u.vn/" target="_blank">PhuongTran.</a>
             </div>
          </div>
-
       </footer>
       <!--end-->
       <!--back to top--->
       <a id="back-to-top" class="scrollTop back-to-top" href="javascript:void(0);" style="display: none;">
-   <img src="public/admin/images/top-arrow.png" alt="back-to-top"/>
-   </a>
+      <img src="public/admin/images/top-arrow.png" alt="back-to-top"/>
+      </a>
       <script>
          $('.bxslider').bxSlider({
              moveSlides: 1,

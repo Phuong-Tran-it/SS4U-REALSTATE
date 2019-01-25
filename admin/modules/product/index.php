@@ -4,9 +4,10 @@
    require_once __DIR__. "/../../layout/ADMINHEADER.php";
    $product =$db->fetchAll("product");
    
-   if(isset($_GET['page']))
+   $id = intval(getInput('id')) ;
+   if(isset($_GET['p']))
    {
-      $p = $_GET['page'];
+      $p = $_GET['p'];
    }
    else
    {
@@ -15,12 +16,12 @@
    $sql = "SELECT product.*,category.name as namecate FROM product 
       LEFT JOIN category on category.id = product.category_id
       ";
-   $product = $db->fetchJone('product',$sql,$p,2,true);
-   if(isset($product['page']))
-   {
-      $sotrang = $product['page'];
-      unset($product['page']);
-   }
+
+   $total = count($db->fetchsql($sql));
+   $product = $db->fetchJones("product",$sql,$total,$p,10,true);
+   $sotrang = $product['page'];  
+   unset($product['page']);
+   $path = $_SERVER['SCRIPT_NAME'];
    
 ?>
 <title>Danh Mục Sản Phẩm</title>
@@ -99,35 +100,21 @@
                <nav aria-label="...">
                   <div class="pull-right">
                      <ul class="pagination">
-                        <li class="page-item disabled">
-                           <span class="page-link">Trước</span>
-                        </li>
 
-                        <?php for( $i =1 ; $i <= $sotrang ; $i++): ?>
-                        <?php
-                           if(isset($_GET['page']))
-                           {
-                              $p = $_GET['page'];
-                           }
-                           else
-                           {
-                              $p = 1;
-                           }
-                           
-                            ?>
-                        <li class="<?php echo ($i==$p) ? 'active' : '' ?>">
-                           <a href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                        <?php for ( $i=1; $i <= $sotrang; $i++): ?>
+                        <li class="">
+                           <a href="<?php echo $path ?>?id=<?php echo $id ?>&&p=<?php echo $i?>">
+                              <?php echo $i; ?>
+                              </a>
                         </li>
                         <?php endfor; ?>
-                        
-                        <li class="page-item">
-                           <a class="page-link" href="#">Sau</a>
-                        </li>
+                     
                      </ul>
                   </div>
                </nav>
             </div>
          </div>
       </div>
+      
    </div>
 </section>

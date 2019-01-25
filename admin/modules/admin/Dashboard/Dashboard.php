@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once __DIR__. "/../../../autoload/autoload.php"; ?>
+<?php require_once __DIR__. "/../../../autoload/autoload.php"; 
+  $book = $db->fetchAll('transaction');
+  $User = $db->fetchAll('users');
+  $product = $db->fetchAll('product');
+?>
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -331,9 +335,9 @@
                       <i class="mdi mdi-cube text-danger icon-lg"></i>
                     </div>
                     <div class="float-right">
-                      <p class="mb-0 text-right">Total Revenue</p>
+                      <p class="mb-0 text-right">Dự Án Đang Bán</p>
                       <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">$65,650</h3>
+                        <h3 class="font-weight-medium text-right mb-0"><?php echo count($product) ?></h3>
                       </div>
                     </div>
                   </div>
@@ -343,7 +347,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card" >
               <div class="card card-statistics">
                 <div class="card-body">
                   <div class="clearfix">
@@ -351,14 +355,14 @@
                       <i class="mdi mdi-receipt text-warning icon-lg"></i>
                     </div>
                     <div class="float-right">
-                      <p class="mb-0 text-right">Orders</p>
+                      <p class="mb-0 text-right">Lịch Hẹn</p>
                       <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">3455</h3>
+                        <h3 class="font-weight-medium text-right mb-0"><?php echo count($book) ?></h3>
                       </div>
                     </div>
                   </div>
-                  <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true"></i> Product-wise sales
+                  <p class="text-muted mt-3 mb-0" >
+                    <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true" ></i> Product-wise sales
                   </p>
                 </div>
               </div>
@@ -391,9 +395,9 @@
                       <i class="mdi mdi-account-location text-info icon-lg"></i>
                     </div>
                     <div class="float-right">
-                      <p class="mb-0 text-right">Employees</p>
+                      <p class="mb-0 text-right">Lượng Người Sử Dụng</p>
                       <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">246</h3>
+                        <h3 class="font-weight-medium text-right mb-0"><?php echo count($User) ?></h3>
                       </div>
                     </div>
                   </div>

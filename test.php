@@ -53,7 +53,7 @@
             AND PL.ENABLE_FLAG = 'Y'
             AND PL.ITEM_ID = IDV.ITEM_ID(+)
             AND IDV.PORTION_NAME= PTH.CUS_CHAR1 (+)
-            AND rownum <= 10");
+            AND rownum <= 20");
     oci_execute($result);
     /*
     $nrows = oci_fetch_all($result, $res);

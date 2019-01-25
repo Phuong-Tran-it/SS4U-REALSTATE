@@ -1,4 +1,4 @@
-<!--Template Name: UrbanArchi
+ <!--Template Name: UrbanArchi
 File Name: gallery.html
 Author Name: ThemeVault
 Author URI: http://www.themevault.net/
