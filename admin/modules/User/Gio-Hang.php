@@ -32,8 +32,8 @@
                         <th>Tên</th>
                         <th>Hình Ảnh</th>
                         <th>Giá</th>
-                        <th>Số Lượng</th>
-                        <th>Thành Tiền</th>
+                        
+                        
                         <th>Thao Tác</th>
                      </tr>
                   <tbody>
@@ -46,15 +46,16 @@
                            width="80px" height="80px">
                         </td>
                         <td><?php echo formatPrice($val['price']) ?></td>
+                        <!--
                         <td>
-                           <input type="text" name="qty" value="<?php echo $val['qty'] ?>" class="form-control" disabled>
+                           <?php echo $val['qty'] ?>
                         </td>
                         <td>
                            <?php 
                               echo  
                               formatPrice($val['qty'] * $val['price'])
                               ?>
-                        </td>
+                        </td>-->
                         <td>
                            <a class="btn btn-xs btn-danger"href="remove.php?key=<?php echo $key ?>"><i class="fa fa-times">Xóa</i></a>
                            <!--<a class="btn btn-xs btn-info"href=""><i class="fa fa-refresh">Cập Nhật</i></a>-->

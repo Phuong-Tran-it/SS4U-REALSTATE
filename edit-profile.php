@@ -1,4 +1,5 @@
 <?php    require_once __DIR__. "/admin/layout/header.php";?>
+<title>Chỉnh Sửa Thông Tin</title>
 <br><br><br>
 <div class="container">
    <?php       //xử lý

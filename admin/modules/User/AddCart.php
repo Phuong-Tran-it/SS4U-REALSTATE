@@ -3,7 +3,7 @@
    require_once __DIR__. "/../../layout/header.php";
    if(!isset($_SESSION['name_id']))
    {
-   echo "<script>alert('Bạn phải đăng nhập để thực hiện chức năng này!');location.href='/../../../SS4UREALSTATE/home.php'</script>";
+   echo "<script>alert('Bạn phải đăng nhập để thực hiện chức năng này!');location.href='/../../../SS4UREALSTATE/dang-nhap.php'</script>";
       }
           $id = intval(getInput('id'));
     $product = $db->fetchID("product",$id);

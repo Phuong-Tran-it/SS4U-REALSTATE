@@ -181,20 +181,20 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-3 col-sm-3 col-xs-12">
-                     <div class='counter' data-slno='1' data-min='0' data-max='1000000' data-delay='.5' data-increment=4>98372</div>
+                     <div class='counter' data-slno='1' data-min='0' data-max='1000000' data-delay='.5' data-increment=4>3822</div>
                      <p>Khách Hàng Hài Lòng</p>
                   </div>
                   <div class="col-md-3 col-sm-3 col-xs-12">
                      <div class='counter' data-slno='1' data-min='0' data-max='170' data-delay='8' data-increment="1">390</div>
-                     <p>Đối Tác</p>
+                     <p>Đã Bán</p>
                   </div>
                   <div class="col-md-3 col-sm-3 col-xs-12">
                      <div class='counter' data-slno='1' data-min='0' data-max='500' data-delay='.5' data-increment="11">1200</div>
-                     <p>Dự Án Hoàn Thành</p>
+                     <p>Đã Đặt</p>
                   </div>
                   <div class="col-md-3 col-sm-3 col-xs-12">
-                     <div class='counter' data-slno='1' data-min='0' data-max='169' data-delay='8' data-increment="1">1629</div>
-                     <p>Kế hoạch kinh doanh</p>
+                     <div class='counter' data-slno='1' data-min='0' data-max='169' data-delay='8' data-increment="1">645</div>
+                     <p>Còn Trống</p>
                   </div>
                   <div class="clearfix"></div>
                </div>
