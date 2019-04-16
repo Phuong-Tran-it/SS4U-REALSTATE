@@ -10,6 +10,14 @@
    		];
 
    		$idtran = $db->insert("transaction",$data);
+         $data3=
+         [
+
+            "name" => $_SESSION['name_user'],
+            "messege" => 'Bạn Có Một Lịch Hẹn',
+            "status" => 'unread'
+         ];
+         $insertnote = $db->insert("notifications",$data3);
    		if($idtran >0)
    		{
    			foreach ($_SESSION['cart'] as $key => $value) 
@@ -38,9 +46,6 @@
 <div class="container">
    <div style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
       <div class="panel panel-info" >
-         <div class="panel-heading">
-            <div class="panel-title"><strong>Thông Tin Thanh Toán</strong></div>
-         </div>
       </div>
       
       <div class="panel-body" >
@@ -84,7 +89,7 @@
                <div class="col-md-9">
                   <input type="text" class="form-control" name="address" placeholder="Hồ Chí Minh" value="<?php echo  $user['address'] ?>">
                </div>
-            </div>
+            </div><!--
             <div class="form-group">
                <label for="lastname" class="col-md-3 control-label">Địa chỉ</label>
                <div class="col-md-9">

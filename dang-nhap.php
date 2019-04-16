@@ -78,7 +78,7 @@
             </div>
             <?php endif ?>
             <div class="panel-title"><strong>Đăng Nhập</strong></div>
-            <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Quên mật khẩu?</a></div>
+            <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="/SS4UREALSTATE/admin/modules/User/forgot-Password/forgot-password.php">Quên mật khẩu?</a></div>
          </div>
          <div style="padding-top:30px" class="panel-body" >
             <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>

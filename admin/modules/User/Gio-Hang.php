@@ -72,30 +72,7 @@
                <nav aria-label="...">
                   <div class="pull-right">
                      <ul class="pagination">
-                        <li class="page-item disabled">
-                           <span class="page-link">Trước</span>
-                        </li>
-                        <!--
-                           <?php for( $i =1 ; $i <= $sotrang ; $i++): ?>
-                           <?php
-                              if(isset($_GET['page']))
-                              {
-                                 $p = $_GET['page'];
-                              }
-                              else
-                              {
-                                 $p = 1;
-                              }
-                              
-                               ?>
-                           <li class="<?php echo ($i==$p) ? 'active' : '' ?>">
-                              <a href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
-                           </li>
-                           <?php endfor; ?>
-                           -->
-                        <li class="page-item">
-                           <a class="page-link" href="#">Sau</a>
-                        </li>
+                        
                      </ul>
                   </div>
                </nav>

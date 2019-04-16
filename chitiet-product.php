@@ -89,10 +89,11 @@
                         <center><a href="/SS4UREALSTATE/admin/modules/User/AddCart.php?id=<?php echo $product['id']?>" class="btn btn-primary" type="submit" name="book"> <i class="fa fa-calendar"></i>Đặt Lịch</a></center>
                      </div>
                   </form>
-                  <?php   if(isset($_POST['book']))
-                     {
-                        $_SESSION['Booking'] = $_POST['Booking'];
-                     }
+                  <?php   
+                  if ($_SERVER["REQUEST_METHOD"]=="POST")
+   {
+            
+}
                      
                      ?>
                </section>

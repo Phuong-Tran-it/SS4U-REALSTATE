@@ -39,7 +39,7 @@
          </ol>
       </div>
       <div class="text-head text-center">
-         <h1>Danh Sách Đơn Hàng</h1>
+         <h1>Danh Sách Lịch Hẹn</h1>
       </div>
       <!--Them-->
       <div class="clearfix"></div>
