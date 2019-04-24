@@ -1,5 +1,6 @@
 <?php 
    require_once __DIR__. "/../../autoload/autoload.php";
+   // gán dữ liệu nhập vào và dữ liệu database(thường thì tên biến sẽ đặt giống tên trường trong databasse)
    $data=
       [
            "phone" => postInput('phone'),
@@ -12,7 +13,7 @@
    if ($_SERVER["REQUEST_METHOD"]=="POST")
    {
       $error = [];
-      //if
+      //kiểm tra dữ liệu nhập vào có trống hay không
    
       if(postInput('name')=='')
       {

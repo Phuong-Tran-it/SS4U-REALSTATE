@@ -13,13 +13,14 @@
            param array $data
            return integer
        */
-           //xóa
+           //xóa data theo id
         public function delete($table, $id)
         {
           $sql ="DELETE FROM {$table} WHERE id = $id ";
           mysqli_query($this->link,$sql) or die ("Lỗi Truy Vấn delete --" .mysqli_error($this->link));
           return mysqli_affected_rows($this->link);
         }
+        //thêm data
        public function insert($table, array $data)
        {
            $sql = "INSERT INTO {$table}";
@@ -40,7 +41,7 @@
                mysqli_query($this->link,$sql) or die("lỗi query insert".mysqli_error($this->link));
                return mysqli_insert_id($this->link);
        }
-       //phun hết source ra
+       //phun hết data ra theo dạng mảng
        public function fetchAll($table)
        {
            $sql = "SELECT * FROM {$table} WHERE 1=1";
@@ -55,7 +56,7 @@
            }
            return $data;
        }
-       //
+       //kiểm tra dữ liệu đã tồn tại hay chưa
        public function fetchOne($table, $query)
        {
             $sql = "SELECT * FROM {$table} WHERE ";
@@ -71,6 +72,7 @@
             $result = mysqli_query($this->link,$sql) or die("lỗi query truy vấn fetchID".mysqli_error($this->link));
             return mysqli_fetch_assoc($result);
        }
+       //cập nhật data
        public function update($table, array $data, array $conditions)
        {
             $sql ="UPDATE {$table}";
@@ -128,6 +130,7 @@
           return $data; 
         }
         */
+        // phun data ra theo dạng mảng với câu truy vấn sql
         public function fetchsql( $sql )
         {
             $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn sql " .mysqli_error($this->link));
@@ -171,6 +174,7 @@
             
             return $data;
         }
+        // tải trang
     public function fetchJone($table,$sql ,$page = 0,$row ,$pagi = false )
         {
         
@@ -200,7 +204,7 @@
             return $data;
         }
 
-
+        // tải số trang pagening
         public function fetchJoneDetail($table , $sql ,$page = 0,$total ,$pagi )
         {
             $result = mysqli_query($this->link,$sql) or die("Lỗi truy vấn fetchJone ---- " .mysqli_error($this->link));
@@ -221,6 +225,7 @@
             }
             return $data;
         }
+        // tăng lượt xem mỗi lần click
         public function view($product)
         {
           $id =$product->ma_sp;

@@ -1,21 +1,23 @@
- <?php  require_once __DIR__. "/../../../autoload/autoload.php";
+<?php  require_once __DIR__. "/../../../autoload/autoload.php";
    require_once __DIR__. "/../../../layout/header.php";
    ?>
-
 <?php 
    if ($_POST)
    {
       $uemail = $_POST['email'];
-/*
+   /*
       $User= "SELECT * FROM users WHERE  email='$uemail'";
       $row = mysqli_fetch_row($User);*/
       $con = mysqli_connect('localhost', 'root', '');
-    $db = mysqli_select_db($con, 'realestate');
-    $query = "SELECT * FROM users WHERE  email='$uemail'";
-    $result = mysqli_query($con, $query);
-    $row = mysqli_fetch_row($result);
-    $fh = fopen('EmailTemplate.html', 'r');
-    _debug($fh);die();
+      $db = mysqli_select_db($con, 'realestate');
+      $query = "SELECT * FROM users WHERE  email='$uemail'";
+      $result = mysqli_query($con, $query);
+      $row = mysqli_fetch_row($result);
+      $file = file_get_contents('EmailTemplate.html');
+      _debug(md5($row[5]));die();
+
+//do your post action here, with the result
+    //hàm gửi mail
       if($row >0 )
       {
          
@@ -38,9 +40,9 @@
          $mail->IsHTML(true); 
          $mail->CharSet="utf-8";
          $mail->Subject = " Lấy Lại Mật Khẩu ";
-         $mail ->Body = $fh;
+         $mail ->Body = $row[5];
          
-
+   
          if($mail->Send())
          {
             $_SESSION['success'] = "Xác Nhận Thành Công, Vui Lòng Kiểm Tra Tin Nhắn";
@@ -66,13 +68,11 @@
          <div class="alert alert-danger" role="alert">
             <strong>Lỗi!</strong> <?php echo $_SESSION['error'] ;unset($_SESSION['error'])?>
          </div>
-
          <?php endif ?>
          <?php if (isset($_SESSION['success'])): ?>
          <div class="alert alert-success" role="alert">
             <strong>Thành Công!</strong> <?php echo $_SESSION['success'] ;unset($_SESSION['success'])?>
          </div>
-         
          <?php endif ?>
          <div class="panel-title"><strong>Tên Đăng Nhập</strong></div>
       </div>
@@ -98,5 +98,5 @@
 </div>
 <br><br><br><br><br><br><br><br><br><br>   <br><br><br><br><br><br><br><br><br><br>
 <?php 
-      require_once __DIR__. "/../../../layout/footer.php";?>
-   ?>
+   require_once __DIR__. "/../../../layout/footer.php";?>
+?>

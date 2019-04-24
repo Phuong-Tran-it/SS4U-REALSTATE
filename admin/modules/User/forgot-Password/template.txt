@@ -7,21 +7,21 @@
 </head>
 <p>
     <span lang=VI style='font-size:13.0pt;font-family:"Tahoma",sans-serif;
-mso-ansi-language:VI'>Kính gửi Quý khách hàng {9},</span><span lang=VI
+mso-ansi-language:VI'>Kính g?i Quý khách hàng {9},</span><span lang=VI
                                                            style='font-size:10.0pt;font-family:"Tahoma",sans-serif;mso-ansi-language:VI'><o:p></o:p></span>
 </p>
 <!--Tên cty-->>
 <p>
     <span lang=VI style='font-size:13.0pt;font-family:"Tahoma",sans-serif;
-mso-ansi-language:VI'>Cảm ơn quý khách hàng đã mua hàng tại<b> {11}.</b></span><span lang=VI style='font-size:10.0pt;
+mso-ansi-language:VI'>C?m on quý khách hàng dã mua hàng t?i<b> {11}.</b></span><span lang=VI style='font-size:10.0pt;
 font-family:"Tahoma",sans-serif;mso-ansi-language:VI'><o:p></o:p></span>
 </p>
 <!--link web-->>
 <p>
     <span lang=VI style='font-size:13.0pt;font-family:"Tahoma",sans-serif;
 mso-ansi-language:VI'>
-        Hóa đơn điện tử mua hàng của Quý khách đã được phát hành
-        với Mã tra cứu là: <b>
+        Hóa don di?n t? mua hàng c?a Quý khách dã du?c phát hành
+        v?i Mã tra c?u là: <b>
             <a href=""
                target="_blank">{7}</a>
         </b>
@@ -31,7 +31,7 @@ font-family:"Tahoma",sans-serif;mso-ansi-language:VI'><o:p></o:p></span>
 <!--thông tin-->>
 <p>
     <span lang=VI style='font-size:13.0pt;font-family:"Tahoma",sans-serif;
-mso-ansi-language:VI'>Thông Tin Chi Tiết Hóa Đơn:</span><span lang=VI
+mso-ansi-language:VI'>Thông Tin Chi Ti?t Hóa Ðon:</span><span lang=VI
                                                                   style='font-size:10.0pt;font-family:"Tahoma",sans-serif;mso-ansi-language:VI'><o:p></o:p></span>
 </p>
 <ul type=disc>
@@ -39,49 +39,49 @@ mso-ansi-language:VI'>Thông Tin Chi Tiết Hóa Đơn:</span><span lang=VI
      mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>
         <span lang=VI
               style='font-size:13.0pt;font-family:"Tahoma",sans-serif;mso-fareast-font-family:
-     "Times New Roman";mso-ansi-language:VI'>Mẫu số: {0}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
+     "Times New Roman";mso-ansi-language:VI'>M?u s?: {0}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
      mso-fareast-font-family:"Times New Roman";mso-ansi-language:VI'><o:p></o:p></span>
     </li>
     <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
      mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>
         <span lang=VI
               style='font-size:13.0pt;font-family:"Tahoma",sans-serif;mso-fareast-font-family:
-     "Times New Roman";mso-ansi-language:VI'>Ký hiệu: {1}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
+     "Times New Roman";mso-ansi-language:VI'>Ký hi?u: {1}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
      mso-fareast-font-family:"Times New Roman";mso-ansi-language:VI'><o:p></o:p></span>
     </li>
     <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
      mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>
         <span lang=VI
               style='font-size:13.0pt;font-family:"Tahoma",sans-serif;mso-fareast-font-family:
-     "Times New Roman";mso-ansi-language:VI'>Số Hóa đơn: {2}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
+     "Times New Roman";mso-ansi-language:VI'>S? Hóa don: {2}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
      mso-fareast-font-family:"Times New Roman";mso-ansi-language:VI'><o:p></o:p></span>
     </li>
     <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
      mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>
         <span lang=VI
               style='font-size:13.0pt;font-family:"Tahoma",sans-serif;mso-fareast-font-family:
-     "Times New Roman";mso-ansi-language:VI'>Ngày Hóa đơn: {3}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
+     "Times New Roman";mso-ansi-language:VI'>Ngày Hóa don: {3}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
      mso-fareast-font-family:"Times New Roman";mso-ansi-language:VI'><o:p></o:p></span>
     </li>
     <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
      mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>
         <span lang=VI
               style='font-size:13.0pt;font-family:"Tahoma",sans-serif;mso-fareast-font-family:
-     "Times New Roman";mso-ansi-language:VI'>Tổng tiền hàng: {4}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
+     "Times New Roman";mso-ansi-language:VI'>T?ng ti?n hàng: {4}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
      mso-fareast-font-family:"Times New Roman";mso-ansi-language:VI'><o:p></o:p></span>
     </li>
     <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
      mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>
         <span lang=VI
               style='font-size:13.0pt;font-family:"Tahoma",sans-serif;mso-fareast-font-family:
-     "Times New Roman";mso-ansi-language:VI'>Tổng Tiến Thuế: {5}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
+     "Times New Roman";mso-ansi-language:VI'>T?ng Ti?n Thu?: {5}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
      mso-fareast-font-family:"Times New Roman";mso-ansi-language:VI'><o:p></o:p></span>
     </li>
     <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
      mso-list:l0 level1 lfo3;tab-stops:list 36.0pt'>
         <span lang=VI
               style='font-size:13.0pt;font-family:"Tahoma",sans-serif;mso-fareast-font-family:
-     "Times New Roman";mso-ansi-language:VI'>Tổng Tiền Thanh Toán: {6}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
+     "Times New Roman";mso-ansi-language:VI'>T?ng Ti?n Thanh Toán: {6}</span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;
      mso-fareast-font-family:"Times New Roman";mso-ansi-language:VI'><o:p></o:p></span>
     </li>
 </ul>
@@ -89,15 +89,15 @@ mso-ansi-language:VI'>Thông Tin Chi Tiết Hóa Đơn:</span><span lang=VI
 <p>
     <span lang=VI style='font-size:13.0pt;font-family:"Tahoma",sans-serif;
 mso-ansi-language:VI'>
-        Quý khách có thể tra cứu và sử dụng Hóa đơn điện tử của
-        mình tại <a href="" target="_blank">{10}</a>
+        Quý khách có th? tra c?u và s? d?ng Hóa don di?n t? c?a
+        mình t?i <a href="" target="_blank">{10}</a>
     </span><span lang=VI style='font-size:10.0pt;font-family:"Tahoma",sans-serif;mso-ansi-language:
 VI'><o:p></o:p></span>
 </p>
 <p>
     <span lang=VI style='font-size:13.0pt;font-family:"Tahoma",sans-serif;
 mso-ansi-language:VI'>
-        Nếu có vấn đề vần hỗ trợ Quý khách vui lòng liên hệ:
+        N?u có v?n d? v?n h? tr? Quý khách vui lòng liên h?:
         {8}
     </span><span lang=VI style='font-size:10.0pt;font-family:
 "Tahoma",sans-serif;mso-ansi-language:VI'><o:p></o:p></span>
